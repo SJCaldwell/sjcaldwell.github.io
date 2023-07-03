@@ -1,0 +1,19 @@
+project:
+  type: website
+
+website:
+  title: "Shane Caldwell"
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com/shncldwll
+format:
+  html:
+    theme: spacelab
+    css: styles.css
+
+
+
