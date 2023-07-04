@@ -16,4 +16,4 @@ about:
 
 ---
 
-Sometimes, AI security means "the security of autonomous systems". Other times, it means "the use of autonomous systems in the domain of security". Happily, I'm interested in both and write about both here.
+Sometimes AI security means "the security of autonomous systems". Other times it means "the use of autonomous systems in the domain of security". Happily, I'm interested in both and write about both here.

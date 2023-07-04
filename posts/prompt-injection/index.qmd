@@ -3,7 +3,8 @@ title: "Prompt Injection: It's gonna be a problem."
 author: "Shane Caldwell"
 date: "2023-07-02"
 categories: [AI, security, LLMs]
-image: "image.jpg"
+image: "image.png"
+toc: true
 ---
 
 # User Inputs: We hate 'em.

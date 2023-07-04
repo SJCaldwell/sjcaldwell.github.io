@@ -6,8 +6,9 @@ website:
   navbar:
     right:
       - about.qmd
+      - talks.qmd
       - icon: github
-        href: https://github.com/
+        href: https://github.com/SJCaldwell
       - icon: twitter
         href: https://twitter.com/shncldwll
 format:
