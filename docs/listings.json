@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/haskell-empathy/index.html",
       "/posts/prompt-injection/index.html",
       "/posts/towards-autonomous-pentesting/index.html",
       "/posts/oscp-review/index.html"
