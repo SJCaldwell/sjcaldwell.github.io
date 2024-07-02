@@ -5,7 +5,6 @@ date: "2024-07-01"
 categories: [programming, fp]
 image: "image.png"
 toc: true
-draft: false
 ---
 
 I'm presently studying functional programming for the first time using Haskell. This is the type of thing one gets to do when being unemployed - study a topic of intellectual interest that absolutely had not come up in my daily life as an MLE, nor as a pentester.
