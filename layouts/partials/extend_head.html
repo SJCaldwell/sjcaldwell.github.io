@@ -1,3 +1,183 @@
 {{/* GoatCounter Analytics */}}
 <script data-goatcounter="https://sjcaldwell.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+
+{{/* Custom Typography and Styling */}}
+<style>
+/* Monospace font stack for personality and readability */
+:root {
+    --font-mono: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Source Code Pro', 'Menlo', 'Consolas', monospace;
+}
+
+/* Override PaperMod's font variables */
+body, html {
+    font-family: var(--font-mono) !important;
+}
+
+/* Apply monospace to all text elements */
+*, *::before, *::after {
+    font-family: var(--font-mono) !important;
+}
+
+/* Improve text contrast - make text more stark */
+.dark {
+    --primary: #ffffff;  /* Pure white text in dark mode */
+    --secondary: #e5e5e5; /* Light gray for secondary text */
+    --tertiary: #cccccc;  /* Medium gray for tertiary elements */
+}
+
+/* Light mode improvements */
+body:not(.dark) {
+    --primary: #000000;   /* Pure black text in light mode */
+    --secondary: #333333; /* Dark gray for secondary text */
+    --tertiary: #666666;  /* Medium gray for tertiary elements */
+}
+
+/* Enhanced link styling for better contrast */
+.dark a {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+
+.dark a:hover {
+    color: #e5e5e5 !important;
+}
+
+/* Code blocks get special treatment to maintain readability */
+code, pre {
+    font-family: var(--font-mono) !important;
+    font-size: 0.9em;
+}
+
+/* Ensure headings are bold and stark */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700 !important;
+    color: var(--primary) !important;
+}
+
+/* Make post metadata more readable */
+.post-meta {
+    color: var(--secondary) !important;
+}
+
+/* Improve button contrast */
+button, .button {
+    font-family: var(--font-mono) !important;
+    font-weight: 500;
+}
+
+/* Paper and Talk Card Styling */
+.paper-card, .talk-card {
+    background: var(--theme);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.paper-card:hover, .talk-card:hover {
+    border-color: var(--secondary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+}
+
+.dark .paper-card, .dark .talk-card {
+    background: #1a1a1a;
+    border-color: #333333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dark .paper-card:hover, .dark .talk-card:hover {
+    border-color: #555555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Paper specific styling */
+.paper-title {
+    margin: 0 0 12px 0 !important;
+    font-size: 1.25em;
+    line-height: 1.3;
+}
+
+.paper-title a {
+    color: var(--primary) !important;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.paper-title a:hover {
+    border-bottom-color: var(--primary);
+}
+
+.paper-meta {
+    margin-bottom: 16px;
+    font-size: 0.9em;
+}
+
+.paper-authors {
+    color: var(--secondary);
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.paper-date {
+    color: var(--tertiary);
+    font-size: 0.85em;
+}
+
+.paper-abstract {
+    color: var(--primary);
+    line-height: 1.5;
+}
+
+.paper-abstract p {
+    margin: 0;
+}
+
+/* Talk specific styling */
+.talk-title {
+    margin: 0 0 12px 0 !important;
+    font-size: 1.25em;
+    line-height: 1.3;
+}
+
+.talk-collaborators {
+    margin-bottom: 16px;
+    font-size: 0.9em;
+    color: var(--secondary);
+}
+
+.talk-collaborators p {
+    margin: 0;
+}
+
+.talk-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.talk-event, .talk-recording {
+    font-size: 0.9em;
+}
+
+.talk-recording a {
+    color: var(--primary) !important;
+    text-decoration: underline;
+}
+
+.talk-recording a:hover {
+    color: var(--secondary) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .paper-card, .talk-card {
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+}
+</style>

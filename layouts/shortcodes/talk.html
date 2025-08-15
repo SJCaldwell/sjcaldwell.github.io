@@ -1,0 +1,23 @@
+{{- $title := .Get "title" -}}
+{{- $event := .Get "event" -}}
+{{- $recording := .Get "recording" -}}
+{{- $collaborators := .Get "collaborators" -}}
+
+<div class="talk-card">
+    <div class="talk-header">
+        <h3 class="talk-title">{{ $title }}</h3>
+        {{- if $collaborators -}}
+            <div class="talk-collaborators">{{ $collaborators | markdownify }}</div>
+        {{- end -}}
+    </div>
+    <div class="talk-details">
+        <div class="talk-event">
+            <strong>Event:</strong> {{ $event }}
+        </div>
+        {{- if $recording -}}
+            <div class="talk-recording">
+                <strong>Recording:</strong> <a href="{{ $recording }}" target="_blank" rel="noopener">Watch Recording</a>
+            </div>
+        {{- end -}}
+    </div>
+</div>

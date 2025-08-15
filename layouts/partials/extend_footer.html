@@ -138,3 +138,157 @@ window.MathJax = {
 </script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+{{/* Footnote Hover Popups */}}
+<style>
+.footnote-popup {
+    position: absolute;
+    background: var(--theme);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 12px 16px;
+    max-width: 300px;
+    font-size: 0.85em;
+    line-height: 1.4;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-family: var(--font-mono);
+    color: var(--primary);
+    display: none;
+    pointer-events: none;
+    word-wrap: break-word;
+}
+
+.dark .footnote-popup {
+    background: #2d2d2d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.footnote-popup::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background: var(--theme);
+    border: 1px solid var(--border);
+    border-bottom: none;
+    border-right: none;
+    rotate: 45deg;
+}
+
+.dark .footnote-popup::before {
+    background: #2d2d2d;
+}
+
+/* Style footnote links to be more prominent */
+a[href^="#fn:"] {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 1px 4px;
+    border-radius: 3px;
+    background: var(--tertiary);
+    transition: background 0.2s ease;
+    position: relative;
+}
+
+a[href^="#fn:"]:hover {
+    background: var(--secondary);
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    let currentPopup = null;
+    let hideTimeout = null;
+
+    function createFootnotePopup(footnoteId, content) {
+        const popup = document.createElement('div');
+        popup.className = 'footnote-popup';
+        popup.innerHTML = content;
+        document.body.appendChild(popup);
+        return popup;
+    }
+
+    function showPopup(link, popup) {
+        if (hideTimeout) {
+            clearTimeout(hideTimeout);
+            hideTimeout = null;
+        }
+
+        const rect = link.getBoundingClientRect();
+        const popupRect = popup.getBoundingClientRect();
+        
+        // Position popup above the footnote link
+        let left = rect.left + (rect.width / 2) - (popup.offsetWidth / 2);
+        let top = rect.top - popup.offsetHeight - 10;
+
+        // Ensure popup doesn't go off screen
+        if (left < 10) left = 10;
+        if (left + popup.offsetWidth > window.innerWidth - 10) {
+            left = window.innerWidth - popup.offsetWidth - 10;
+        }
+        if (top < 10) {
+            top = rect.bottom + 10; // Show below if no room above
+        }
+
+        popup.style.left = left + window.scrollX + 'px';
+        popup.style.top = top + window.scrollY + 'px';
+        popup.style.display = 'block';
+        
+        currentPopup = popup;
+    }
+
+    function hidePopup() {
+        hideTimeout = setTimeout(() => {
+            if (currentPopup) {
+                currentPopup.style.display = 'none';
+                currentPopup = null;
+            }
+        }, 150);
+    }
+
+    // Find all footnote links and add hover functionality
+    document.querySelectorAll('a[href^="#fn:"]').forEach(link => {
+        const footnoteId = link.getAttribute('href');
+        const footnoteElement = document.querySelector(footnoteId);
+        
+        if (!footnoteElement) return;
+        
+        // Get footnote content, removing the back reference
+        const footnoteContent = footnoteElement.innerHTML
+            .replace(/<a[^>]*href="#fnref[^"]*"[^>]*>.*?<\/a>/g, '')
+            .trim();
+        
+        if (!footnoteContent) return;
+
+        const popup = createFootnotePopup(footnoteId, footnoteContent);
+        
+        link.addEventListener('mouseenter', () => {
+            showPopup(link, popup);
+        });
+        
+        link.addEventListener('mouseleave', hidePopup);
+        
+        // Keep popup visible when hovering over the popup itself
+        popup.addEventListener('mouseenter', () => {
+            if (hideTimeout) {
+                clearTimeout(hideTimeout);
+                hideTimeout = null;
+            }
+        });
+        
+        popup.addEventListener('mouseleave', hidePopup);
+    });
+
+    // Hide popup when scrolling
+    window.addEventListener('scroll', () => {
+        if (currentPopup) {
+            currentPopup.style.display = 'none';
+            currentPopup = null;
+        }
+    });
+});
+</script>
