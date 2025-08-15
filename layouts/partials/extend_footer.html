@@ -155,7 +155,7 @@ window.MathJax = {
     font-family: var(--font-mono);
     color: var(--primary);
     display: none;
-    pointer-events: none;
+    pointer-events: auto;
     word-wrap: break-word;
 }
 
@@ -184,18 +184,25 @@ window.MathJax = {
 }
 
 /* Style footnote links to be more prominent */
-a[href^="#fn:"] {
-    text-decoration: none;
+.footnote-ref {
+    text-decoration: none !important;
     font-weight: 600;
-    padding: 1px 4px;
-    border-radius: 3px;
+    padding: 2px 6px;
+    border-radius: 4px;
     background: var(--tertiary);
-    transition: background 0.2s ease;
+    transition: all 0.2s ease;
     position: relative;
+    color: var(--primary) !important;
 }
 
-a[href^="#fn:"]:hover {
+.footnote-ref:hover {
     background: var(--secondary);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dark .footnote-ref:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 </style>
 
@@ -251,7 +258,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Find all footnote links and add hover functionality
-    document.querySelectorAll('a[href^="#fn:"]').forEach(link => {
+    document.querySelectorAll('a.footnote-ref').forEach(link => {
         const footnoteId = link.getAttribute('href');
         const footnoteElement = document.querySelector(footnoteId);
         

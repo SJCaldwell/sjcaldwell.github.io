@@ -2,134 +2,134 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Shane Caldwell</title>
-    <link>https://hackbot.dad/tags/</link>
+    <link>http://localhost:1314/tags/</link>
     <description>Recent content in Tags on Shane Caldwell</description>
     <image>
       <title>Shane Caldwell</title>
-      <url>https://hackbot.dad/</url>
-      <link>https://hackbot.dad/</link>
+      <url>http://localhost:1314/</url>
+      <link>http://localhost:1314/</link>
     </image>
     <generator>Hugo -- 0.146.2</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hackbot.dad/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1314/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Functional-Programming</title>
-      <link>https://hackbot.dad/tags/functional-programming/</link>
+      <link>http://localhost:1314/tags/functional-programming/</link>
       <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/tags/functional-programming/</guid>
+      <guid>http://localhost:1314/tags/functional-programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Haskell</title>
-      <link>https://hackbot.dad/tags/haskell/</link>
+      <link>http://localhost:1314/tags/haskell/</link>
       <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/tags/haskell/</guid>
+      <guid>http://localhost:1314/tags/haskell/</guid>
       <description></description>
     </item>
     <item>
       <title>Learning</title>
-      <link>https://hackbot.dad/tags/learning/</link>
+      <link>http://localhost:1314/tags/learning/</link>
       <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/tags/learning/</guid>
+      <guid>http://localhost:1314/tags/learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Philosophy</title>
-      <link>https://hackbot.dad/tags/philosophy/</link>
+      <link>http://localhost:1314/tags/philosophy/</link>
       <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/tags/philosophy/</guid>
+      <guid>http://localhost:1314/tags/philosophy/</guid>
       <description></description>
     </item>
     <item>
       <title>Ai-Security</title>
-      <link>https://hackbot.dad/tags/ai-security/</link>
+      <link>http://localhost:1314/tags/ai-security/</link>
       <pubDate>Sun, 02 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/tags/ai-security/</guid>
+      <guid>http://localhost:1314/tags/ai-security/</guid>
       <description></description>
     </item>
     <item>
       <title>Cybersecurity</title>
-      <link>https://hackbot.dad/tags/cybersecurity/</link>
+      <link>http://localhost:1314/tags/cybersecurity/</link>
       <pubDate>Sun, 02 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/tags/cybersecurity/</guid>
+      <guid>http://localhost:1314/tags/cybersecurity/</guid>
       <description></description>
     </item>
     <item>
       <title>Llms</title>
-      <link>https://hackbot.dad/tags/llms/</link>
+      <link>http://localhost:1314/tags/llms/</link>
       <pubDate>Sun, 02 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/tags/llms/</guid>
+      <guid>http://localhost:1314/tags/llms/</guid>
       <description></description>
     </item>
     <item>
       <title>Prompt-Injection</title>
-      <link>https://hackbot.dad/tags/prompt-injection/</link>
+      <link>http://localhost:1314/tags/prompt-injection/</link>
       <pubDate>Sun, 02 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/tags/prompt-injection/</guid>
+      <guid>http://localhost:1314/tags/prompt-injection/</guid>
       <description></description>
     </item>
     <item>
       <title>Datasets</title>
-      <link>https://hackbot.dad/tags/datasets/</link>
+      <link>http://localhost:1314/tags/datasets/</link>
       <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/tags/datasets/</guid>
+      <guid>http://localhost:1314/tags/datasets/</guid>
       <description></description>
     </item>
     <item>
       <title>Machine-Learning</title>
-      <link>https://hackbot.dad/tags/machine-learning/</link>
+      <link>http://localhost:1314/tags/machine-learning/</link>
       <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/tags/machine-learning/</guid>
+      <guid>http://localhost:1314/tags/machine-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Malware-Detection</title>
-      <link>https://hackbot.dad/tags/malware-detection/</link>
+      <link>http://localhost:1314/tags/malware-detection/</link>
       <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/tags/malware-detection/</guid>
+      <guid>http://localhost:1314/tags/malware-detection/</guid>
       <description></description>
     </item>
     <item>
       <title>Autonomous-Agents</title>
-      <link>https://hackbot.dad/tags/autonomous-agents/</link>
+      <link>http://localhost:1314/tags/autonomous-agents/</link>
       <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/tags/autonomous-agents/</guid>
+      <guid>http://localhost:1314/tags/autonomous-agents/</guid>
       <description></description>
     </item>
     <item>
       <title>Deep-Learning</title>
-      <link>https://hackbot.dad/tags/deep-learning/</link>
+      <link>http://localhost:1314/tags/deep-learning/</link>
       <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/tags/deep-learning/</guid>
+      <guid>http://localhost:1314/tags/deep-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Penetration-Testing</title>
-      <link>https://hackbot.dad/tags/penetration-testing/</link>
+      <link>http://localhost:1314/tags/penetration-testing/</link>
       <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/tags/penetration-testing/</guid>
+      <guid>http://localhost:1314/tags/penetration-testing/</guid>
       <description></description>
     </item>
     <item>
       <title>Reinforcement-Learning</title>
-      <link>https://hackbot.dad/tags/reinforcement-learning/</link>
+      <link>http://localhost:1314/tags/reinforcement-learning/</link>
       <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/tags/reinforcement-learning/</guid>
+      <guid>http://localhost:1314/tags/reinforcement-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Certification</title>
-      <link>https://hackbot.dad/tags/certification/</link>
+      <link>http://localhost:1314/tags/certification/</link>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/tags/certification/</guid>
+      <guid>http://localhost:1314/tags/certification/</guid>
       <description></description>
     </item>
     <item>
       <title>Oscp</title>
-      <link>https://hackbot.dad/tags/oscp/</link>
+      <link>http://localhost:1314/tags/oscp/</link>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/tags/oscp/</guid>
+      <guid>http://localhost:1314/tags/oscp/</guid>
       <description></description>
     </item>
   </channel>
