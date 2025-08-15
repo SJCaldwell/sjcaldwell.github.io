@@ -1,0 +1,161 @@
+baseURL: "https://sjcaldwell.github.io"
+languageCode: "en-us"
+title: "Shane Caldwell"
+theme: "PaperMod"
+
+# Enable RSS
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# For GitHub Pages
+publishDir: "public"
+
+# Enable syntax highlighting
+markup:
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: false
+    style: github
+    tabWidth: 4
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      footnote: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: "Shane Caldwell"
+  description: "AI Security Researcher - working on hackbots."
+  keywords: [Blog, Portfolio, AI Security, Cybersecurity, Machine Learning]
+  author: "Shane Caldwell"
+  images: [""]
+  DateFormat: "January 2, 2006"
+  defaultTheme: dark
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  # Analytics - GoatCounter
+  analytics:
+    goatcounter:
+      code: "sjcaldwell"
+
+  # Main sections for recent posts
+  mainSections: ["writing"]
+  
+  # Popular posts for homepage
+  popularPosts:
+    - path: "/writing/prompt-injection"
+    - path: "/writing/towards-autonomous-pentesting"  
+    - path: "/writing/oscp-review"
+
+  assets:
+    disableHLJS: false
+    disableFingerprinting: false
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+
+  label:
+    text: "Shane Caldwell"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # Home page info
+  homeInfoParams:
+    Title: "Hackbot R&D"
+    Content: |
+      I'm a researcher working at the intersection of artificial intelligence and computer security. I work at [Dreadnode](https://dreadnode.io) training and evaluating the hacking capabilities of agents. I'll be working in this field until we see hacking's [move 37](https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol). 
+      
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/SJCaldwell"
+    - name: twitter
+      url: "https://twitter.com/shncldwll"
+    - name: rss
+      url: "index.xml"
+
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+
+  ## Edit post links
+  #editPost:
+  #  URL: "https://github.com/SJCaldwell/sjcaldwell.github.io/tree/main/content"
+  #  Text: "Suggest Changes"
+  #  appendFilePath: true
+
+  # Search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: main
+      name: Main
+      url: /
+      weight: 10
+    - identifier: papers
+      name: Papers
+      url: /papers/
+      weight: 20
+    - identifier: talks
+      name: Talks
+      url: /talks/
+      weight: 30
+    - identifier: writing
+      name: Writing
+      url: /writing/
+      weight: 40
+
+# RSS configuration
+rss:
+  limit: 20
+
+# Taxonomy
+taxonomies:
+  category: categories
+  tag: tags
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON

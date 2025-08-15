@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cybersecurity on Shane Caldwell</title>
+    <link>http://localhost:1314/tags/cybersecurity/</link>
+    <description>Recent content in Cybersecurity on Shane Caldwell</description>
+    <image>
+      <title>Shane Caldwell</title>
+      <url>http://localhost:1314/</url>
+      <link>http://localhost:1314/</link>
+    </image>
+    <generator>Hugo -- 0.146.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1314/tags/cybersecurity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Input Sanitization Prospective on Prompt Injection</title>
+      <link>http://localhost:1314/writing/prompt-injection/</link>
+      <pubDate>Sun, 02 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1314/writing/prompt-injection/</guid>
+      <description>An analysis of prompt injection vulnerabilities in large language models and why they represent a fundamental security challenge.</description>
+    </item>
+    <item>
+      <title>Infosec&#39;s Data Problem</title>
+      <link>http://localhost:1314/writing/infosecs-data-problem/</link>
+      <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1314/writing/infosecs-data-problem/</guid>
+      <description>Exploring the fundamental data sharing challenges that limit machine learning progress in information security, and why the field needs its own ImageNet moment.</description>
+    </item>
+    <item>
+      <title>An ML Eng&#39;s Review of OSCP</title>
+      <link>http://localhost:1314/writing/oscp-review/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1314/writing/oscp-review/</guid>
+      <description>A comprehensive review of the Offensive Security Certified Professional (OSCP) certification from the perspective of a machine learning engineer entering the security field.</description>
+    </item>
+  </channel>
+</rss>

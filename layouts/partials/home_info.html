@@ -1,0 +1,72 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <div class="home-info-container">
+        <div class="home-info-content">
+            <header class="entry-header">
+                <h1>{{ .Title | markdownify }}</h1>
+            </header>
+            <div class="entry-content">
+                {{ .Content | markdownify }}
+            </div>
+            <footer class="entry-footer">
+                {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+            </footer>
+        </div>
+        <div class="home-info-image">
+            <img src="/profile.jpg" alt="Shane Caldwell" class="profile-image">
+        </div>
+    </div>
+</article>
+
+<style>
+.home-info-container {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.home-info-content {
+    flex: 1;
+}
+
+.home-info-image {
+    flex-shrink: 0;
+}
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--border);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .home-info-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .profile-image {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+}
+
+/* Ensure proper spacing on larger screens */
+@media (min-width: 769px) {
+    .home-info-container {
+        min-height: 200px;
+    }
+}
+</style>
+{{- end -}}

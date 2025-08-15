@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Test on Shane Caldwell</title>
+    <link>http://localhost:1313/tags/test/</link>
+    <description>Recent content in Test on Shane Caldwell</description>
+    <image>
+      <title>Shane Caldwell</title>
+      <url>http://localhost:1313/</url>
+      <link>http://localhost:1313/</link>
+    </image>
+    <generator>Hugo -- 0.146.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Dec 2023 10:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Post - AI Security Research</title>
+      <link>http://localhost:1313/writing/test-post/</link>
+      <pubDate>Fri, 01 Dec 2023 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writing/test-post/</guid>
+      <description>A test post to verify the Hugo setup and PaperMod theme configuration.</description>
+    </item>
+  </channel>
+</rss>

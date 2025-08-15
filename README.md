@@ -1,3 +1,0 @@
-# turingpentester-blog
-
-New blog
