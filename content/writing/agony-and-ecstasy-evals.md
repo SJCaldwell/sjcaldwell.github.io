@@ -3,7 +3,7 @@ title: "GPT-5 is Good, Actually: The Agony and Ecstasy of Public Benchmarks"
 date: 2025-08-17T00:00:00Z
 author: "Shane Caldwell"
 categories: ["llms", "evals"]
-tags: ["llms", "evals"]
+tags: ["llms", "evals", "research"]
 description: "An attempt to explain why benchmarks are either bad or secret, and why the bar charts don't matter so much."
 summary: "An attempt to explain why benchmarks are either bad or secret, and why the bar charts don't matter so much."
 ShowToc: true
