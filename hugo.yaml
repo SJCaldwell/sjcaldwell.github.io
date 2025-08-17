@@ -44,7 +44,7 @@ params:
   author: "Shane Caldwell"
   images: [""]
   DateFormat: "January 2, 2006"
-  defaultTheme: dark
+  defaultTheme: auto
   disableThemeToggle: false
 
   ShowReadingTime: true
