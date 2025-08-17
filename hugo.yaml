@@ -87,8 +87,6 @@ params:
 
   label:
     text: "Shane Caldwell"
-    icon: /apple-touch-icon.png
-    iconHeight: 35
 
   # Home page info
   homeInfoParams:
