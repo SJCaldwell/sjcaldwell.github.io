@@ -244,11 +244,35 @@ button, .button {
     text-align: center;
 }
 
-/* Responsive caption adjustments */
+/* Mobile spacing fixes for cut-off numbers */
 @media (max-width: 768px) {
     .post-content figcaption {
         font-size: 0.8em;
         padding: 0 8px;
+    }
+    
+    /* Fix ordered list numbers being cut off */
+    .post-content ol {
+        padding-left: 24px !important;
+        margin-left: 4px !important;
+    }
+    
+    /* Fix footnote numbers being cut off */
+    .post-content .footnote-ref {
+        margin-left: 2px !important;
+        margin-right: 3px !important;
+    }
+    
+    /* Ensure main content has enough padding on mobile */
+    .post-content {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    
+    /* Fix any content that might be too close to screen edge */
+    .main {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
     }
 }
 </style>
