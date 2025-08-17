@@ -2,104 +2,113 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1314/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/categories/fp/</loc>
+    <loc>http://localhost:1313/categories/evals/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/tags/functional-programming/</loc>
+    <loc>http://localhost:1313/tags/evals/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/tags/haskell/</loc>
+    <loc>http://localhost:1313/categories/fp/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/tags/learning/</loc>
+    <loc>http://localhost:1313/tags/functional-programming/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/tags/philosophy/</loc>
+    <loc>http://localhost:1313/writing/agony-and-ecstacy-evals/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/categories/programming/</loc>
+    <loc>http://localhost:1313/tags/haskell/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/</loc>
+    <loc>http://localhost:1313/tags/learning/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/tags/</loc>
+    <loc>http://localhost:1313/tags/llms/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/writing/haskell-empathy/</loc>
+    <loc>http://localhost:1313/categories/llms/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/writing/</loc>
+    <loc>http://localhost:1313/tags/philosophy/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/categories/ai/</loc>
+    <loc>http://localhost:1313/categories/programming/</loc>
+    <lastmod>2024-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/writing/haskell-empathy/</loc>
+    <lastmod>2024-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/writing/</loc>
+    <lastmod>2024-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/ai/</loc>
     <lastmod>2023-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/tags/ai-security/</loc>
+    <loc>http://localhost:1313/tags/ai-security/</loc>
     <lastmod>2023-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/tags/cybersecurity/</loc>
+    <loc>http://localhost:1313/tags/cybersecurity/</loc>
     <lastmod>2023-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/tags/llms/</loc>
+    <loc>http://localhost:1313/tags/prompt-injection/</loc>
     <lastmod>2023-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/categories/llms/</loc>
+    <loc>http://localhost:1313/categories/security/</loc>
     <lastmod>2023-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/tags/prompt-injection/</loc>
+    <loc>http://localhost:1313/writing/prompt-injection/</loc>
     <lastmod>2023-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/categories/security/</loc>
-    <lastmod>2023-07-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1314/writing/prompt-injection/</loc>
-    <lastmod>2023-07-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1314/tags/datasets/</loc>
+    <loc>http://localhost:1313/tags/datasets/</loc>
     <lastmod>2022-06-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/writing/infosecs-data-problem/</loc>
+    <loc>http://localhost:1313/writing/infosecs-data-problem/</loc>
     <lastmod>2022-06-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/tags/machine-learning/</loc>
+    <loc>http://localhost:1313/tags/machine-learning/</loc>
     <lastmod>2022-06-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/tags/malware-detection/</loc>
+    <loc>http://localhost:1313/tags/malware-detection/</loc>
     <lastmod>2022-06-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/tags/autonomous-agents/</loc>
+    <loc>http://localhost:1313/tags/autonomous-agents/</loc>
     <lastmod>2020-04-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/writing/towards-autonomous-pentesting/</loc>
+    <loc>http://localhost:1313/writing/towards-autonomous-pentesting/</loc>
     <lastmod>2020-04-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/tags/deep-learning/</loc>
+    <loc>http://localhost:1313/tags/deep-learning/</loc>
     <lastmod>2020-04-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/tags/penetration-testing/</loc>
+    <loc>http://localhost:1313/tags/penetration-testing/</loc>
     <lastmod>2020-04-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/tags/reinforcement-learning/</loc>
+    <loc>http://localhost:1313/tags/reinforcement-learning/</loc>
     <lastmod>2020-04-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/categories/rl/</loc>
+    <loc>http://localhost:1313/categories/rl/</loc>
     <lastmod>2020-04-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/writing/oscp-review/</loc>
+    <loc>http://localhost:1313/writing/oscp-review/</loc>
     <lastmod>2020-04-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/tags/certification/</loc>
+    <loc>http://localhost:1313/tags/certification/</loc>
     <lastmod>2020-04-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/tags/oscp/</loc>
+    <loc>http://localhost:1313/tags/oscp/</loc>
     <lastmod>2020-04-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1314/papers/</loc>
+    <loc>http://localhost:1313/papers/</loc>
   </url><url>
-    <loc>http://localhost:1314/talks/</loc>
+    <loc>http://localhost:1313/talks/</loc>
   </url>
 </urlset>

@@ -180,4 +180,24 @@ button, .button {
         margin-bottom: 16px;
     }
 }
+
+/* Twitter/X embed styling */
+.twitter-tweet {
+    margin: 24px auto !important;
+    max-width: 550px !important;
+}
+
+/* Center Twitter embeds container */
+.post-content blockquote.twitter-tweet,
+.post-content div:has(.twitter-tweet) {
+    display: flex;
+    justify-content: center;
+    margin: 24px 0;
+}
+
+/* Ensure consistent spacing */
+.post-content .twitter-tweet iframe {
+    margin: 0 auto;
+    display: block;
+}
 </style>

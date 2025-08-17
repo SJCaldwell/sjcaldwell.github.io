@@ -2,57 +2,64 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Shane Caldwell</title>
-    <link>http://localhost:1314/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Shane Caldwell</description>
     <image>
       <title>Shane Caldwell</title>
-      <url>http://localhost:1314/</url>
-      <link>http://localhost:1314/</link>
+      <url>http://localhost:1313/</url>
+      <link>http://localhost:1313/</link>
     </image>
     <generator>Hugo -- 0.146.2</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1314/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Evals</title>
+      <link>http://localhost:1313/categories/evals/</link>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/evals/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Fp</title>
-      <link>http://localhost:1314/categories/fp/</link>
+      <link>http://localhost:1313/categories/fp/</link>
       <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/categories/fp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Programming</title>
-      <link>http://localhost:1314/categories/programming/</link>
-      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/categories/programming/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI</title>
-      <link>http://localhost:1314/categories/ai/</link>
-      <pubDate>Sun, 02 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/categories/ai/</guid>
+      <guid>http://localhost:1313/categories/fp/</guid>
       <description></description>
     </item>
     <item>
       <title>LLMs</title>
-      <link>http://localhost:1314/categories/llms/</link>
+      <link>http://localhost:1313/categories/llms/</link>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/llms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>http://localhost:1313/categories/programming/</link>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI</title>
+      <link>http://localhost:1313/categories/ai/</link>
       <pubDate>Sun, 02 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/categories/llms/</guid>
+      <guid>http://localhost:1313/categories/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Security</title>
-      <link>http://localhost:1314/categories/security/</link>
+      <link>http://localhost:1313/categories/security/</link>
       <pubDate>Sun, 02 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/categories/security/</guid>
+      <guid>http://localhost:1313/categories/security/</guid>
       <description></description>
     </item>
     <item>
       <title>RL</title>
-      <link>http://localhost:1314/categories/rl/</link>
+      <link>http://localhost:1313/categories/rl/</link>
       <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/categories/rl/</guid>
+      <guid>http://localhost:1313/categories/rl/</guid>
       <description></description>
     </item>
   </channel>
