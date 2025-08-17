@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Shane Caldwell</title>
-    <link>https://hackbot.dad/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Shane Caldwell</description>
     <image>
       <title>Shane Caldwell</title>
-      <url>https://hackbot.dad/</url>
-      <link>https://hackbot.dad/</link>
+      <url>http://localhost:1313/</url>
+      <link>http://localhost:1313/</link>
     </image>
     <generator>Hugo -- 0.146.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 17 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hackbot.dad/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GPT-5 is Good, Actually: The Agony and Ecstasy of Public Benchmarks</title>
-      <link>https://hackbot.dad/writing/agony-and-ecstasy-evals/</link>
+      <link>http://localhost:1313/writing/agony-and-ecstasy-evals/</link>
       <pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/writing/agony-and-ecstasy-evals/</guid>
+      <guid>http://localhost:1313/writing/agony-and-ecstasy-evals/</guid>
       <description>An attempt to explain why benchmarks are either bad or secret, and why the bar charts don&amp;#39;t matter so much.</description>
     </item>
     <item>
       <title>The Religious Devotion of Haskell</title>
-      <link>https://hackbot.dad/writing/haskell-empathy/</link>
+      <link>http://localhost:1313/writing/haskell-empathy/</link>
       <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/writing/haskell-empathy/</guid>
+      <guid>http://localhost:1313/writing/haskell-empathy/</guid>
       <description>An exploration of functional programming through Haskell, motivated by trying to understand the near-religious devotion its practitioners have for the language.</description>
     </item>
     <item>
       <title>The Input Sanitization Perspective on Prompt Injection</title>
-      <link>https://hackbot.dad/writing/prompt-injection/</link>
+      <link>http://localhost:1313/writing/prompt-injection/</link>
       <pubDate>Sun, 02 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/writing/prompt-injection/</guid>
+      <guid>http://localhost:1313/writing/prompt-injection/</guid>
       <description>An analysis of prompt injection vulnerabilities in large language models and why they represent a fundamental security challenge.</description>
     </item>
     <item>
       <title>Infosec&#39;s Data Problem</title>
-      <link>https://hackbot.dad/writing/infosecs-data-problem/</link>
+      <link>http://localhost:1313/writing/infosecs-data-problem/</link>
       <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/writing/infosecs-data-problem/</guid>
+      <guid>http://localhost:1313/writing/infosecs-data-problem/</guid>
       <description>Exploring the fundamental data sharing challenges that limit machine learning progress in information security, and why the field needs its own ImageNet moment.</description>
     </item>
     <item>
       <title>Deep Reinforcement Learning for Security: Toward an Autonomous Pentesting Agent</title>
-      <link>https://hackbot.dad/writing/towards-autonomous-pentesting/</link>
+      <link>http://localhost:1313/writing/towards-autonomous-pentesting/</link>
       <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/writing/towards-autonomous-pentesting/</guid>
+      <guid>http://localhost:1313/writing/towards-autonomous-pentesting/</guid>
       <description>An exploration of using deep reinforcement learning to create autonomous penetration testing agents, examining the challenges and potential solutions for automating cybersecurity assessments.</description>
     </item>
     <item>
       <title>An ML Eng&#39;s Review of OSCP</title>
-      <link>https://hackbot.dad/writing/oscp-review/</link>
+      <link>http://localhost:1313/writing/oscp-review/</link>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/writing/oscp-review/</guid>
+      <guid>http://localhost:1313/writing/oscp-review/</guid>
       <description>A comprehensive review of the Offensive Security Certified Professional (OSCP) certification from the perspective of a machine learning engineer entering the security field.</description>
     </item>
   </channel>
