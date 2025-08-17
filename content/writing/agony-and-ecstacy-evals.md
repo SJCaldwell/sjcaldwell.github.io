@@ -8,7 +8,7 @@ description: "An attempt to explain why benchmarks are either bad or secret, and
 summary: "An attempt to explain why benchmarks are either bad or secret, and why the barcharts don't matter so much."
 ShowToc: true
 TocOpen: false
-draft: true
+draft: false
 ---
 
 My first reaction to GPT-5 was positive. I was at Blackhat/Defcon the week of the release, and was mostly (for once) not on Twitter. Being off Twitter, I missed the much maligned livestream. In fact, before I even got on Twitter and saw everyone absolutely clowning *that* bar chart, the first things I heard were positive.
