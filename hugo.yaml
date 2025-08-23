@@ -157,3 +157,11 @@ outputs:
     - HTML
     - RSS
     - JSON
+
+# Security configuration to allow GITHUB_SHA in production builds
+security:
+  funcs:
+    getenv:
+      - '^HUGO_'
+      - '^CI'
+      - '^GITHUB_SHA$'
