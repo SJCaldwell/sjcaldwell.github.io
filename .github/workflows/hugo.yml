@@ -62,3 +62,12 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify deployment
+        run: |
+          sleep 30
+          echo "Verifying deployment with commit SHA: ${{ github.sha }}"
+          curl -s "https://hackbot.dad/" | grep -q "${{ github.sha }}" || {
+            echo "Deployment verification failed - commit SHA not found on site"
+            exit 1
+          }
+          echo "Deployment verification successful!"
