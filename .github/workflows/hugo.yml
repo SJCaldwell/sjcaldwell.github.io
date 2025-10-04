@@ -12,7 +12,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 defaults:
   run:
@@ -28,8 +28,6 @@ jobs:
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
-      - name: Install Dart Sass
-        run: sudo snap install dart-sass
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -64,10 +62,32 @@ jobs:
         uses: actions/deploy-pages@v4
       - name: Verify deployment
         run: |
-          sleep 30
-          echo "Verifying deployment with commit SHA: ${{ github.sha }}"
-          curl -s "https://hackbot.dad/" | grep -q "${{ github.sha }}" || {
-            echo "Deployment verification failed - commit SHA not found on site"
-            exit 1
-          }
-          echo "Deployment verification successful!"
+          echo "Verifying deployment with commit: ${{ github.sha }}"
+          TARGET_URL="${{ steps.deployment.outputs.page_url }}"
+          echo "Target URL: ${TARGET_URL}"
+
+          # Retry loop to allow CDN propagation and cache invalidation
+          for attempt in {1..20}; do
+            echo "Attempt ${attempt}..."
+            BODY=$(curl -fsSL -L \
+              -H 'Cache-Control: no-cache, no-store, max-age=0' \
+              -H 'Pragma: no-cache' \
+              --connect-timeout 10 --max-time 30 \
+              "${TARGET_URL}") || true
+
+            if echo "$BODY" | grep -qE '<meta[^>]+name=["\']build-id["\'][^>]+content=["\']${{ github.sha }}["\']'; then
+              echo "Deployment verification successful via build-id meta tag."
+              exit 0
+            fi
+
+            if echo "$BODY" | grep -q "${{ github.sha }}"; then
+              echo "Deployment verification successful via raw SHA match."
+              exit 0
+            fi
+
+            echo "Not updated yet; waiting before retry..."
+            sleep 15
+          done
+
+          echo "Deployment verification failed: SHA not found after retries."
+          exit 1

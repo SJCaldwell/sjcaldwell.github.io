@@ -462,7 +462,7 @@ So very briefly, you overwrite all of your progress. The models are right back t
 
 If you want to try this for yourself, you can check out my repo here for [NanoDiloco](https://github.com/SJCaldwell/NanoDiloco). The wandb logs are [here](https://wandb.ai/sjcaldwell/nano-dilco/workspace?nw=nwusersjcaldwell). If you want to see what production grade DiLoCo looks like, Prime Intellect has a beautiful repo for it [here](https://github.com/PrimeIntellect-ai/prime/blob/de5b9317da5f57247f11abed2fca259076795460/src/zeroband/diloco.py#L24).
 
-And to Zach, who I hope reads this: great class! I've found in general it's easy to find teachers if the thing you want to learn is ~5 years out of date, but the closer you get to the cutting edge the rarer it is to find someone who is both gifted at doing the work itself as well as concisely communicating that understanding to other people, pulling all the pedagogical knobs and levers required. That's why Karpathy gets so much love. I think you've got the same gift[^6]. 
+And to Zach, who I hope reads this: great class! I've found in general it's easy to find teachers if the thing you want to learn is ~5 years out of date, but the closer you get to the cutting edge the rarer it is to find someone who is both gifted at doing the work itself as well as concisely communicating that understanding to other people, pulling all the pedagogical knobs and levers required.
 
 
 [^1]: "Look at the crummy latency on this model, look at the dumb mistakes it makes, and how limited its labels are! We could never go to prod with this. Now, let's talk about our labeling budget..."
