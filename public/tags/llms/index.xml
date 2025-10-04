@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.146.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/llms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RL Needed LLMs Because Agency Requires Priors</title>
+      <link>http://localhost:1313/writing/rl-llms-and-priors/</link>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writing/rl-llms-and-priors/</guid>
+      <description>We tried RL once. It didn&amp;#39;t work. I&amp;#39;m confident it will this time.</description>
+    </item>
     <item>
       <title>GPT-5 is Good, Actually: The Agony and Ecstasy of Public Benchmarks</title>
       <link>http://localhost:1313/writing/agony-and-ecstasy-evals/</link>

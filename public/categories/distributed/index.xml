@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Distributed on Shane Caldwell</title>
+    <link>http://localhost:1313/categories/distributed/</link>
+    <description>Recent content in Distributed on Shane Caldwell</description>
+    <image>
+      <title>Shane Caldwell</title>
+      <url>http://localhost:1313/</url>
+      <link>http://localhost:1313/</link>
+    </image>
+    <generator>Hugo -- 0.146.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/distributed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DiLoCo: Data Parallelism for the Datacenter Poor</title>
+      <link>http://localhost:1313/writing/data-parallelism-for-the-poor/</link>
+      <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writing/data-parallelism-for-the-poor/</guid>
+      <description>We tried RL once. It didn&amp;#39;t work. I&amp;#39;m confident it will this time.</description>
+    </item>
+  </channel>
+</rss>
