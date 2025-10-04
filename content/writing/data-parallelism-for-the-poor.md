@@ -53,7 +53,7 @@ Finally, you've got:
 $$m_{opt}= (4 + 4) * N$$
 This won't be the same for all optimizers. But let's say we're using standard [Adam](https://docs.pytorch.org/docs/stable/generated/torch.optim.Adam.html). Adam is going to store the momentum and variance in FP32 for each parameter. So that's an additional 48GB of memory.
 
-So, assuming we're using FP32, we're at 96GB already, before we've even computed an activation. All that for a measly 7B parameter model. No wonder people feel complain about feeling GPU poor. 
+So, assuming we're using FP32, we're at 96GB already, before we've even computed an activation. All that for a measly 7B parameter model. No wonder people feel GPU poor. 
 
 So 7B was ambitious for fitting on a single card. I just wanted to write it out because 7B is chump change and already has you reaching for different techniques to distribute memory over multiple cards/nodes[^4]. For the purposes of this post, let's assume our model is smaller. Call it a ~1B parameter model. Those same calculations would give us 2GB for model parameters, 2GB for gradients, and 4GB for optimizers. A healthy 8GB that would fit on most consumer grade cards. It's also the size of [GPT-2 XL](https://huggingface.co/openai-community/gpt2-xl), so you're at least in the 2019 tech tree.
 
