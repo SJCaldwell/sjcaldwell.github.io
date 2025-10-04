@@ -27,9 +27,71 @@ body, html {
     font-family: var(--font-mono) !important;
 }
 
-/* Apply monospace to all text elements */
-*, *::before, *::after {
+/* Apply monospace to all text elements except MathJax */
+*:not(mjx-container):not(mjx-container *),
+*:not(mjx-container):not(mjx-container *)::before,
+*:not(mjx-container):not(mjx-container *)::after {
     font-family: var(--font-mono) !important;
+}
+
+/* MathJax display containers */
+mjx-container {
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+    overflow: visible !important;
+}
+
+mjx-container[display="true"] {
+    display: block !important;
+    text-align: center !important;
+    margin: 1em auto !important;
+    max-width: 100% !important;
+}
+
+/* Ensure multi-line equations display properly */
+mjx-container[display="true"] mjx-math {
+    display: inline-block !important;
+    text-align: left !important;
+}
+
+/* Force alignment environments to stack vertically */
+mjx-container mjx-mtable {
+    display: table !important;
+    margin: 0 auto !important;
+    width: auto !important;
+}
+
+mjx-container mjx-mtr {
+    display: table-row !important;
+    height: auto !important;
+}
+
+mjx-container mjx-mtd {
+    display: table-cell !important;
+    padding: 0.3em 0.8em !important;
+    vertical-align: middle !important;
+}
+
+/* Ensure align environments don't collapse */
+mjx-container[display="true"] mjx-mtable mjx-mtr {
+    display: table-row !important;
+    white-space: nowrap !important;
+}
+
+mjx-container[display="true"] mjx-mtable {
+    display: table !important;
+    border-collapse: separate !important;
+    border-spacing: 0 0.3em !important;
+}
+
+/* Remove scrollbars from MathJax */
+mjx-container::-webkit-scrollbar {
+    display: none !important;
+}
+
+mjx-container {
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
 }
 
 /* Improve text contrast - make text more stark */

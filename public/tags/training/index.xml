@@ -18,7 +18,7 @@
       <link>http://localhost:1313/writing/data-parallelism-for-the-poor/</link>
       <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/writing/data-parallelism-for-the-poor/</guid>
-      <description>We tried RL once. It didn&amp;#39;t work. I&amp;#39;m confident it will this time.</description>
+      <description>Distributed training sans datacenter.</description>
     </item>
   </channel>
 </rss>

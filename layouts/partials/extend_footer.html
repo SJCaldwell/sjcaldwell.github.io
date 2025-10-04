@@ -131,12 +131,27 @@ window.MathJax = {
     processEscapes: true,
     processEnvironments: true
   },
+  chtml: {
+    scale: 1.0,
+    mtextInheritFont: false,
+    matchFontHeight: false
+  },
   options: {
     skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  },
+  startup: {
+    pageReady: () => {
+      return MathJax.startup.defaultPageReady().then(() => {
+        // Remove any overflow styling MathJax might add
+        document.querySelectorAll('mjx-container').forEach(container => {
+          container.style.overflow = 'visible';
+        });
+      });
+    }
   }
 };
 </script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"></script>
 
 {{/* Footnote Hover Popups */}}
 <style>
@@ -275,7 +290,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Find all footnote links and add hover functionality
     document.querySelectorAll('a.footnote-ref').forEach(link => {
         const footnoteId = link.getAttribute('href');
-        const footnoteElement = document.querySelector(footnoteId);
+        if (!footnoteId) return;
+        const footnoteElement = document.querySelector(footnoteId.replace(/:/g, '\\:'));
         
         if (!footnoteElement) return;
         

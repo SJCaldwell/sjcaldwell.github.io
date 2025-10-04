@@ -2,122 +2,122 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://hackbot.dad/</loc>
+    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hackbot.dad/writing/</loc>
+    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hackbot.dad/categories/</loc>
     <lastmod>2025-08-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/llms/</loc>
+    <loc>https://hackbot.dad/categories/llms/</loc>
     <lastmod>2025-08-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/llms/</loc>
+    <loc>https://hackbot.dad/tags/llms/</loc>
     <lastmod>2025-08-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/research/</loc>
+    <loc>https://hackbot.dad/tags/research/</loc>
     <lastmod>2025-08-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/rl/</loc>
+    <loc>https://hackbot.dad/tags/rl/</loc>
     <lastmod>2025-08-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/rl/</loc>
+    <loc>https://hackbot.dad/categories/rl/</loc>
     <lastmod>2025-08-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/writing/rl-llms-and-priors/</loc>
+    <loc>https://hackbot.dad/writing/rl-llms-and-priors/</loc>
     <lastmod>2025-08-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://hackbot.dad/tags/</loc>
     <lastmod>2025-08-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-08-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/writing/</loc>
-    <lastmod>2025-08-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/evals/</loc>
+    <loc>https://hackbot.dad/categories/evals/</loc>
     <lastmod>2025-08-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/evals/</loc>
+    <loc>https://hackbot.dad/tags/evals/</loc>
     <lastmod>2025-08-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/writing/agony-and-ecstasy-evals/</loc>
+    <loc>https://hackbot.dad/writing/agony-and-ecstasy-evals/</loc>
     <lastmod>2025-08-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/fp/</loc>
+    <loc>https://hackbot.dad/categories/fp/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/functional-programming/</loc>
+    <loc>https://hackbot.dad/tags/functional-programming/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/haskell/</loc>
+    <loc>https://hackbot.dad/tags/haskell/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/learning/</loc>
+    <loc>https://hackbot.dad/tags/learning/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/philosophy/</loc>
+    <loc>https://hackbot.dad/tags/philosophy/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/programming/</loc>
+    <loc>https://hackbot.dad/categories/programming/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/writing/haskell-empathy/</loc>
+    <loc>https://hackbot.dad/writing/haskell-empathy/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/ai/</loc>
+    <loc>https://hackbot.dad/categories/ai/</loc>
     <lastmod>2023-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ai-security/</loc>
+    <loc>https://hackbot.dad/tags/ai-security/</loc>
     <lastmod>2023-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cybersecurity/</loc>
+    <loc>https://hackbot.dad/tags/cybersecurity/</loc>
     <lastmod>2023-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/prompt-injection/</loc>
+    <loc>https://hackbot.dad/tags/prompt-injection/</loc>
     <lastmod>2023-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/security/</loc>
+    <loc>https://hackbot.dad/categories/security/</loc>
     <lastmod>2023-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/writing/prompt-injection/</loc>
+    <loc>https://hackbot.dad/writing/prompt-injection/</loc>
     <lastmod>2023-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/datasets/</loc>
+    <loc>https://hackbot.dad/tags/datasets/</loc>
     <lastmod>2022-06-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/writing/infosecs-data-problem/</loc>
+    <loc>https://hackbot.dad/writing/infosecs-data-problem/</loc>
     <lastmod>2022-06-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/machine-learning/</loc>
+    <loc>https://hackbot.dad/tags/machine-learning/</loc>
     <lastmod>2022-06-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/malware-detection/</loc>
+    <loc>https://hackbot.dad/tags/malware-detection/</loc>
     <lastmod>2022-06-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/autonomous-agents/</loc>
+    <loc>https://hackbot.dad/tags/autonomous-agents/</loc>
     <lastmod>2020-04-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/writing/towards-autonomous-pentesting/</loc>
+    <loc>https://hackbot.dad/writing/towards-autonomous-pentesting/</loc>
     <lastmod>2020-04-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/deep-learning/</loc>
+    <loc>https://hackbot.dad/tags/deep-learning/</loc>
     <lastmod>2020-04-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/penetration-testing/</loc>
+    <loc>https://hackbot.dad/tags/penetration-testing/</loc>
     <lastmod>2020-04-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/reinforcement-learning/</loc>
+    <loc>https://hackbot.dad/tags/reinforcement-learning/</loc>
     <lastmod>2020-04-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/writing/oscp-review/</loc>
+    <loc>https://hackbot.dad/writing/oscp-review/</loc>
     <lastmod>2020-04-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/certification/</loc>
+    <loc>https://hackbot.dad/tags/certification/</loc>
     <lastmod>2020-04-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/oscp/</loc>
+    <loc>https://hackbot.dad/tags/oscp/</loc>
     <lastmod>2020-04-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/papers/</loc>
+    <loc>https://hackbot.dad/papers/</loc>
   </url><url>
-    <loc>http://localhost:1313/talks/</loc>
+    <loc>https://hackbot.dad/talks/</loc>
   </url>
 </urlset>

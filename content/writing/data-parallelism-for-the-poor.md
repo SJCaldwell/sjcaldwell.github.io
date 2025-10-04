@@ -8,7 +8,7 @@ description: "Distributed training sans datacenter."
 summary: "Distributed training sans datacenter."
 ShowToc: true
 TocOpen: false
-draft: true
+draft: false
 ---
 
 I'm a big believer in private models. I always have been. The term "local" model still strikes me as strange, because it was previously the default. We'd just call them _models_. If we had to refer to a third party hosted model, we'd just say "the default google model" or whatever, and that was generally derogatory.
@@ -321,7 +321,7 @@ Our ideal technique would be one that's stackable (in that it uses data parallel
 
 As it turns out, that exists. It's called [DiLoCo: Distributed Low-Communication Training of Language Models](https://arxiv.org/abs/2311.08105).
 ## The DiLoCo paper
-If you've done a brief read of HuggingFace's [The Ultra-Scale Playbook](https://huggingface.co/spaces/nanotron/ultrascale-playbook)[^2], the DiLoCo paper is actually quite readable.
+If you've done a brief read of HuggingFace's [The Ultra-Scale Playbook](https://huggingface.co/spaces/nanotron/ultrascale-playbook)[^3], the DiLoCo paper is actually quite readable.
 
 The basic setup mirrors data parallelism exactly. You've got replicas of your model, deployed to potentially heterogenous compute. Just like standard data parallelism, each replica also has its own discrete part of the dataset available for training. 
 

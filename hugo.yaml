@@ -31,6 +31,19 @@ markup:
       unsafe: true
     extensions:
       footnote: true
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+          - - $
+            - $
+        enable: true
 
 minify:
   disableXML: true
