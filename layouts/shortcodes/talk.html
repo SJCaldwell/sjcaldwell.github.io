@@ -1,6 +1,7 @@
 {{- $title := .Get "title" -}}
 {{- $event := .Get "event" -}}
 {{- $recording := .Get "recording" -}}
+{{- $slides := .Get "slides" -}}
 {{- $collaborators := .Get "collaborators" -}}
 
 <div class="talk-card">
@@ -16,7 +17,12 @@
         </div>
         {{- if $recording -}}
             <div class="talk-recording">
-                <strong>Recording:</strong> <a href="{{ $recording }}" target="_blank" rel="noopener">Watch Recording</a>
+                <a href="{{ $recording }}" target="_blank" rel="noopener">Recording</a>
+            </div>
+        {{- end -}}
+        {{- if $slides -}}
+            <div class="talk-slides">
+                <a href="{{ $slides }}" target="_blank" rel="noopener">Slides</a>
             </div>
         {{- end -}}
     </div>

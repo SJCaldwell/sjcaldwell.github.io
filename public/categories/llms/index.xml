@@ -2,36 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Llms on Shane Caldwell</title>
-    <link>https://hackbot.dad/categories/llms/</link>
+    <link>http://localhost:1313/categories/llms/</link>
     <description>Recent content in Llms on Shane Caldwell</description>
     <image>
       <title>Shane Caldwell</title>
-      <url>https://hackbot.dad/</url>
-      <link>https://hackbot.dad/</link>
+      <url>http://localhost:1313/</url>
+      <link>http://localhost:1313/</link>
     </image>
     <generator>Hugo -- 0.146.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hackbot.dad/categories/llms/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/llms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DiLoCo: Data Parallelism for the Datacenter Poor</title>
+      <link>http://localhost:1313/writing/data-parallelism-for-the-poor/</link>
+      <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writing/data-parallelism-for-the-poor/</guid>
+      <description>Distributed training sans datacenter.</description>
+    </item>
     <item>
       <title>RL Needed LLMs Because Agency Requires Priors</title>
-      <link>https://hackbot.dad/writing/rl-llms-and-priors/</link>
+      <link>http://localhost:1313/writing/rl-llms-and-priors/</link>
       <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/writing/rl-llms-and-priors/</guid>
+      <guid>http://localhost:1313/writing/rl-llms-and-priors/</guid>
       <description>We tried RL once. It didn&amp;#39;t work. I&amp;#39;m confident it will this time.</description>
     </item>
     <item>
       <title>GPT-5 is Good, Actually: The Agony and Ecstasy of Public Benchmarks</title>
-      <link>https://hackbot.dad/writing/agony-and-ecstasy-evals/</link>
+      <link>http://localhost:1313/writing/agony-and-ecstasy-evals/</link>
       <pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/writing/agony-and-ecstasy-evals/</guid>
+      <guid>http://localhost:1313/writing/agony-and-ecstasy-evals/</guid>
       <description>An attempt to explain why benchmarks are either bad or secret, and why the bar charts don&amp;#39;t matter so much.</description>
     </item>
     <item>
       <title>The Input Sanitization Perspective on Prompt Injection</title>
-      <link>https://hackbot.dad/writing/prompt-injection/</link>
+      <link>http://localhost:1313/writing/prompt-injection/</link>
       <pubDate>Sun, 02 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://hackbot.dad/writing/prompt-injection/</guid>
+      <guid>http://localhost:1313/writing/prompt-injection/</guid>
       <description>An analysis of prompt injection vulnerabilities in large language models and why they represent a fundamental security challenge.</description>
     </item>
   </channel>
