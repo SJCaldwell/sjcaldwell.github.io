@@ -3,7 +3,49 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/llms/</loc>
+    <lastmod>2025-11-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/llms/</loc>
+    <lastmod>2025-11-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/writing/pretraining-at-home/</loc>
+    <lastmod>2025-11-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/research/</loc>
+    <lastmod>2025-11-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-11-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/training/</loc>
+    <lastmod>2025-11-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/training/</loc>
+    <lastmod>2025-11-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/writing/</loc>
+    <lastmod>2025-11-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/evals/</loc>
+    <lastmod>2025-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/evals/</loc>
+    <lastmod>2025-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/offsec/</loc>
+    <lastmod>2025-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/offsec/</loc>
+    <lastmod>2025-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/writing/offsec-evals-dark-forest/</loc>
+    <lastmod>2025-10-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/writing/data-parallelism-for-the-poor/</loc>
     <lastmod>2025-10-03T00:00:00+00:00</lastmod>
@@ -14,41 +56,14 @@
     <loc>http://localhost:1313/tags/distributed/</loc>
     <lastmod>2025-10-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/llms/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/llms/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/rl/</loc>
     <lastmod>2025-10-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/training/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/writing/</loc>
-    <lastmod>2025-10-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/research/</loc>
-    <lastmod>2025-08-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/rl/</loc>
     <lastmod>2025-08-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/writing/rl-llms-and-priors/</loc>
     <lastmod>2025-08-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/evals/</loc>
-    <lastmod>2025-08-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/evals/</loc>
-    <lastmod>2025-08-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/writing/agony-and-ecstasy-evals/</loc>
     <lastmod>2025-08-17T00:00:00+00:00</lastmod>

@@ -11,8 +11,36 @@
     </image>
     <generator>Hugo -- 0.146.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Llms</title>
+      <link>http://localhost:1313/categories/llms/</link>
+      <pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/llms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Training</title>
+      <link>http://localhost:1313/categories/training/</link>
+      <pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/training/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Evals</title>
+      <link>http://localhost:1313/categories/evals/</link>
+      <pubDate>Tue, 28 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/evals/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Offsec</title>
+      <link>http://localhost:1313/categories/offsec/</link>
+      <pubDate>Tue, 28 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/offsec/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Distributed</title>
       <link>http://localhost:1313/categories/distributed/</link>
@@ -21,24 +49,10 @@
       <description></description>
     </item>
     <item>
-      <title>Llms</title>
-      <link>http://localhost:1313/categories/llms/</link>
-      <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/llms/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>RL</title>
       <link>http://localhost:1313/categories/rl/</link>
       <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/rl/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Evals</title>
-      <link>http://localhost:1313/categories/evals/</link>
-      <pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/evals/</guid>
       <description></description>
     </item>
     <item>
