@@ -295,6 +295,8 @@ Our final MFU on a single node with eight H100s was 40%. The training time calcu
 
 It's hard to finish this blog post, because there's so much more I know I could do. Pre-tokenize the dataset, play with cuda buffers, call `torch.compile` while we warmed up, write a kernel in Triton, figure out what "flex attention is". Optimizing training jobs is a job in itself, and one I have slightly more appreciation for. I expect I'll come back to all of the above, but ultimately these optimizations were in service of training small models I want to exist. And for that, what I really need to get into is _data_.
 
+If you want to look at the code, you can check it out [here](https://github.com/SJCaldwell/nanoPT).
+
 Until next time. 
 
 [^1]: It is also the case that most models are trained beyond chinchilla optimality and continue to see stronger performance, so the calculations that follow can be considered a "minimum non-wasteful bar to clear". Consider LLama 3 8B being trained on _15 trillion_ tokens. 
