@@ -80,7 +80,6 @@ attn_weights = torch.matmul(query_states, key_states.transpose(2, 3)) / math.sqr
 
 Calculating `attn_weights`, obviously. That's a big matrix. On the bright side, the loss goes down. 
 
-![[initial_training_run.png]]
 {{<figure src="initial_training_run.png" alt="" caption="Only have to wait a week and a half for this bad boy to run.">}}
 
 I should note here that the `val_loss` was calculated off of a very small part of my initial validation set. I like getting my loss fairly frequently, and was plotting it every full batch of one million tokens. Because of my minibatch size of one required by the current attention implementation, it was just totally dominating my training time. I decided to replace it with a fixed number of samples - in this case 100, which represents a fraction of a percentage of my 125,125 validation documents. If I was GPU richer, I'd love to set up a job system that would take my model checkpoint, toss it to object storage, and run it against evals without interrupting my training job and posting the results asynchronously as training went. [Ray seems to support this out of the box](https://docs.ray.io/en/latest/train/user-guides/asynchronous-validation.html).
