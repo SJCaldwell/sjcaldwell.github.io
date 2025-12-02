@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Training on Shane Caldwell</title>
-    <link>http://localhost:1313/categories/training/</link>
-    <description>Recent content in Training on Shane Caldwell</description>
+    <title>Data on Shane Caldwell</title>
+    <link>http://localhost:1313/tags/data/</link>
+    <description>Recent content in Data on Shane Caldwell</description>
     <image>
       <title>Shane Caldwell</title>
       <url>http://localhost:1313/</url>
@@ -12,20 +12,13 @@
     <generator>Hugo -- 0.146.2</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/training/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/data/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Twenty Billion Tokens of What, Exactly?</title>
       <link>http://localhost:1313/writing/20b-tokens-of-what/</link>
       <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/writing/20b-tokens-of-what/</guid>
       <description>Looking at the data and letting it look back at us.</description>
-    </item>
-    <item>
-      <title>Pretraining at home: 20B tokens from 222 hours to 12</title>
-      <link>http://localhost:1313/writing/pretraining-at-home/</link>
-      <pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/writing/pretraining-at-home/</guid>
-      <description>Optimizing training a Llama 3.2 1B model so we can pretrain in a day without going broke.</description>
     </item>
   </channel>
 </rss>
