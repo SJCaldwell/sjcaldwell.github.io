@@ -347,8 +347,6 @@ Specifically, the paper says:
 
 >We hypothesize that the Nesterov’s gradient correction is particularly helpful with the outer gradient that span hundred of training steps.
 
-An intuition about this is [intuition].
-
 The paper ends with a series of ablations. What if compute joins or leaves during training? They find models end up generalizing well given a fixed compute budget, regardless of how that compute is made available over time. What if we do all of this on a single worker? Convergence speeds up. What if the communication is asynchronous and spotty, and outer gradient communications don't always reach a given worker? No problem, let the worker continue training the model for another round of $H$ inner-states and try again, it only slightly effects the final perplexity of the model. In general, the paper concludes that DiLoCo is just a vary robust algorithm for data parallelism.
 
 This isn't pure research, either. Prime Intellect took it out on the road with [Intellect-1](https://www.primeintellect.ai/blog/intellect-1-release). Prime Intellect's training used their own DiLoCo implementation that supports [FSDP2](https://huggingface.co/docs/accelerate/en/concept_guides/fsdp1_vs_fsdp2). DiLoCo is used across nodes and FSDP within nodes. The resulting 10B parameter model converged, training on 14 concurrent nodes on three different continents, across 30 different compute providers.
