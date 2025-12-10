@@ -304,7 +304,7 @@ We won't implement it here, because we're interested in a different question. Le
 
 If I run the exact same code but on two different nodes without Remote Direct Memory Access (RDMA) it runs in about ~500ms. Worse still, but tolerable.
 
-We can keep extending that distance, just based on what we know about the internet. We're transferring on the order of 18MB with each all-reduce here. On the same node, with PCIe we've got a bandwidth of around ~10-25 Gbps. Latency will be short. On different nodes we've got to kick on the network stack which increases our overhead (thus the 500ms). Not so bad.
+We can keep extending that distance, just based on what we know about the internet. We're transferring on the order of 18MB with each all-reduce here. On the same node, with PCIe we've got a bandwidth of around ~32 GB/s. Latency will be short. On different nodes we've got to kick on the network stack which increases our overhead (thus the 500ms). Not so bad.
 
 But what if we don't _have_ nodes on the same rack? What if they're not even in the same data center? What if we don't _have_ a data center, and are instead sourcing compute from wherever we can get it?
 
