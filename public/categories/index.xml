@@ -11,27 +11,41 @@
     </image>
     <generator>Hugo -- 0.146.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Data</title>
-      <link>http://localhost:1313/categories/data/</link>
-      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/data/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Llms</title>
       <link>http://localhost:1313/categories/llms/</link>
-      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/llms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Systems</title>
+      <link>http://localhost:1313/categories/systems/</link>
+      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/systems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Decentralized</title>
+      <link>http://localhost:1313/categories/decentralized/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/decentralized/</guid>
       <description></description>
     </item>
     <item>
       <title>Training</title>
       <link>http://localhost:1313/categories/training/</link>
-      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/training/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data</title>
+      <link>http://localhost:1313/categories/data/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/data/</guid>
       <description></description>
     </item>
     <item>

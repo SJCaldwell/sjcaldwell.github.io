@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Decentralized on Shane Caldwell</title>
+    <link>http://localhost:1313/categories/decentralized/</link>
+    <description>Recent content in Decentralized on Shane Caldwell</description>
+    <image>
+      <title>Shane Caldwell</title>
+      <url>http://localhost:1313/</url>
+      <link>http://localhost:1313/</link>
+    </image>
+    <generator>Hugo -- 0.146.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/decentralized/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>All Reduce Across the Atlantic: Bandwidth in Decentralized Training </title>
+      <link>http://localhost:1313/writing/all-reduce-across-atlantic/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writing/all-reduce-across-atlantic/</guid>
+      <description>The practical realities of devestatingly high communication cost in training.</description>
+    </item>
+  </channel>
+</rss>

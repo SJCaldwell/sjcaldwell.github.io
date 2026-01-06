@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Systems on Shane Caldwell</title>
+    <link>http://localhost:1313/tags/systems/</link>
+    <description>Recent content in Systems on Shane Caldwell</description>
+    <image>
+      <title>Shane Caldwell</title>
+      <url>http://localhost:1313/</url>
+      <link>http://localhost:1313/</link>
+    </image>
+    <generator>Hugo -- 0.146.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/systems/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intro to GPUs For the Research Oriented</title>
+      <link>http://localhost:1313/writing/intro-to-gpus/</link>
+      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writing/intro-to-gpus/</guid>
+      <description>Getting comfortable with the hardware on a quest for more MFU.</description>
+    </item>
+  </channel>
+</rss>

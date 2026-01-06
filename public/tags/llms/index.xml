@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- 0.146.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/llms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intro to GPUs For the Research Oriented</title>
+      <link>http://localhost:1313/writing/intro-to-gpus/</link>
+      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writing/intro-to-gpus/</guid>
+      <description>Getting comfortable with the hardware on a quest for more MFU.</description>
+    </item>
+    <item>
+      <title>All Reduce Across the Atlantic: Bandwidth in Decentralized Training </title>
+      <link>http://localhost:1313/writing/all-reduce-across-atlantic/</link>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writing/all-reduce-across-atlantic/</guid>
+      <description>The practical realities of devestatingly high communication cost in training.</description>
+    </item>
     <item>
       <title>Twenty Billion Tokens of What, Exactly?</title>
       <link>http://localhost:1313/writing/20b-tokens-of-what/</link>
