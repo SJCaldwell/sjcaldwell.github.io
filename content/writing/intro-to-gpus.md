@@ -1,6 +1,6 @@
 ---
 title: "Intro to GPUs For the Research Oriented"
-date: 2026-01-06T00:00:00Z
+date: 2026-01-05T00:00:00Z
 author: "Shane Caldwell"
 categories: ["llms", "systems"]
 tags: ["llms", "systems"]
