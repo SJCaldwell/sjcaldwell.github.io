@@ -59,14 +59,14 @@ Anything above 3/7 or ~43% is beating random judgement.
 | Model | Provider | Alignment | Cost/Pair |
 |-------|----------|-----------|-----------|
 | gpt-5.4 (reasoning: low) | OpenAI | **65.9%** | $0.24 |
-| Kimi K2.5 | MoonshotAI | **59.3%** | ~$0.07* |
+| Kimi K2.5 | MoonshotAI | **59.3%** | $0.07 |
 | Gemini 3 Flash | Google | **58.5%** | $0.22 |
 | Qwen3-32b | Groq | **52.8%** | $0.013 |
 | gpt-5.4-nano | OpenAI | 50.4% | $0.009 |
 | gpt-5.4-mini | OpenAI | 48.8% | $0.03 |
 | Haiku 4.5 | Anthropic | 46.3% | $0.56 |
 | gpt-oss-120b | Groq | 27.6% | $0.014 |
-| Gemini 3.1 Flash Lite | Google | 26.8% | ~$0.00 |
+| Gemini 3.1 Flash Lite | Google | 26.8% | ~$0.001 |
 | gpt-oss-20b | Groq | 5.7% | $0.018 |
 
 With judges, I like to look at the pareto frontier so you can get a sense of the different cost-levels. 

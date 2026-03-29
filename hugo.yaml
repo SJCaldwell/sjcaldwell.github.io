@@ -86,9 +86,9 @@ params:
   
   # Popular posts for homepage
   popularPosts:
-    - path: "/writing/prompt-injection"
-    - path: "/writing/towards-autonomous-pentesting"  
-    - path: "/writing/oscp-review"
+    - path: "/writing/agony-and-ecstasy-evals"
+    - path: "/writing/offsec-evals-dark-forest"  
+    - path: "/writing/pretraining-at-home"
 
   assets:
     disableHLJS: false
