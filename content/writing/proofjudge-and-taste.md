@@ -11,6 +11,10 @@ TocOpen: false
 draft: false
 ---
 
+>I think in the future, there will be entire professions of mathematicians who might take a giant Lean-generated proof and do some ablation on it, trying to remove parts of it and find more elegant ways. They might get other AIs to do some reinforcement learning to make the proof more elegant, and **maybe other AIs will grade whether this proof looks better or not**.
+>
+> -[Terence Tao](https://www.dwarkesh.com/p/terence-tao)
+
 Today I'm releasing ProofJudge - an eval I built for testing LLM-as-judge alignment with expert human taste on Lean4 code quality. The release includes:
 
 - [The harness for ProofJudge](https://github.com/SJCaldwell/ProofJudge).
