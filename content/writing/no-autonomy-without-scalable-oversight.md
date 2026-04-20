@@ -21,7 +21,7 @@ Training has suffered similarly. The difference in content between a mechanicall
 
 These are just changes that need to be made for evaluation and training of the type we do today to continue making progress. Let's consider what pressures are specifically added by _long-running agents that take meaningful actions in the real world_.
 
-# Scalable Oversight of Infinite Agents
+## Scalable Oversight of Infinite Agents
 
 The labs are signaling their interest in models that can work autonomously for longer and longer periods of time. [METR has Claude Opus 4.6 at doing tasks over a 12 hour period](https://metr.org/). These are less like "implement a bug fix" and more like "build these net new features". In the former case, it's easy for a human being to check whether the bug is gone at the end and the new code looks good. In the latter case, building up enough context to understand the code and grade it is time consuming. If you're running multiple Claude Opus instances in different parts of your codebase, you're now talking about a huge branching action space with output you simply cannot review manually. Running linters and unit test in the loop helps tie the model outputs to reality, but is ultimately not sufficient to avoid creating unmaintainable slop. This requires both _outcome based judges_ and *in-process judges*.
 
