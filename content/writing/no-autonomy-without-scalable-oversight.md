@@ -51,6 +51,6 @@ I'll close on two claims:
 
 First, any deployment story that assumes a human employee is reviewing every consequential agent interaction will not survive contact with reality. Judges are how you recover autonomy, and agent products that don't allow companies to calibrate those judges will find themselves locked out of high impact industries.
 
-Second, attacking judges in harnesses like Claude Code's `auto` mode is where AI red teaming goes next. The methodology doesn't exist yet, and it will not be practical for humans to test these systems "my hand". 
+Second, attacking judges in harnesses like Claude Code's `auto` mode is where AI red teaming goes next. The methodology doesn't exist yet, and it will not be practical for humans to test these systems "by hand". 
 
 As for myself, I'll be publishing on calibration, adversarial robustness, and escalation sensitivity for the rest of 2026; if you're working on any of them I'd love to hear from you. 
