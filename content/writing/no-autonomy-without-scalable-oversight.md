@@ -54,3 +54,5 @@ First, any deployment story that assumes a human employee is reviewing every con
 Second, attacking judges in harnesses like Claude Code's `auto` mode is where AI red teaming goes next. The methodology doesn't exist yet, and it will not be practical for humans to test these systems "by hand". 
 
 As for myself, I'll be publishing on calibration, adversarial robustness, and escalation sensitivity for the rest of 2026; if you're working on any of them I'd love to hear from you. 
+
+{{< figure src="year_of_the_judge.jpeg" alt="" caption="" >}}
