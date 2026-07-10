@@ -103,9 +103,9 @@ params:
 
   # Home page info
   homeInfoParams:
-    Title: "Hackbot R&D"
+    Title: "Full Contact Alignment"
     Content: |
-      I'm a researcher working at the intersection of artificial intelligence and computer security. I work at [Dreadnode](https://dreadnode.io) training and evaluating the hacking capabilities of agents. I'll be working in this field until we see hacking's [move 37](https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol). 
+      I build scalable oversight and control systems for autonomous agents operating in adversarial, high-consequence environments at [Dreadnode](https://dreadnode.io/).
       
 
   socialIcons:
