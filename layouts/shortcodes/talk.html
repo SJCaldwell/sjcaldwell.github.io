@@ -4,7 +4,7 @@
 {{- $slides := .Get "slides" -}}
 {{- $collaborators := .Get "collaborators" -}}
 
-<div class="talk-card">
+<article class="talk-card">
     <div class="talk-header">
         <h3 class="talk-title">{{ $title }}</h3>
         {{- if $collaborators -}}
@@ -13,7 +13,7 @@
     </div>
     <div class="talk-details">
         <div class="talk-event">
-            <strong>Event:</strong> {{ $event }}
+            <span class="card-eyebrow">Event</span> {{ $event }}
         </div>
         {{- if $recording -}}
             <div class="talk-recording">
@@ -26,4 +26,4 @@
             </div>
         {{- end -}}
     </div>
-</div>
+</article>

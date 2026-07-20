@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Judge on Shane Caldwell</title>
+    <link>https://hackbot.dad/categories/judge/</link>
+    <description>Recent content in Judge on Shane Caldwell</description>
+    <image>
+      <title>Shane Caldwell</title>
+      <url>https://hackbot.dad/</url>
+      <link>https://hackbot.dad/</link>
+    </image>
+    <generator>Hugo -- 0.146.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://hackbot.dad/categories/judge/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>No Autonomy Without Scalable Oversight</title>
+      <link>https://hackbot.dad/writing/no-autonomy-without-scalable-oversight/</link>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://hackbot.dad/writing/no-autonomy-without-scalable-oversight/</guid>
+      <description>What to expect as we enter the Year of The Judge</description>
+    </item>
+  </channel>
+</rss>

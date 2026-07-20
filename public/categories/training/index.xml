@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Training on Shane Caldwell</title>
-    <link>http://localhost:1313/categories/training/</link>
+    <link>https://hackbot.dad/categories/training/</link>
     <description>Recent content in Training on Shane Caldwell</description>
     <image>
       <title>Shane Caldwell</title>
-      <url>http://localhost:1313/</url>
-      <link>http://localhost:1313/</link>
+      <url>https://hackbot.dad/</url>
+      <link>https://hackbot.dad/</link>
     </image>
     <generator>Hugo -- 0.146.2</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/training/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hackbot.dad/categories/training/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>All Reduce Across the Atlantic: Bandwidth in Decentralized Training </title>
-      <link>http://localhost:1313/writing/all-reduce-across-atlantic/</link>
+      <link>https://hackbot.dad/writing/all-reduce-across-atlantic/</link>
       <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/writing/all-reduce-across-atlantic/</guid>
+      <guid>https://hackbot.dad/writing/all-reduce-across-atlantic/</guid>
       <description>The practical realities of devestatingly high communication cost in training.</description>
     </item>
     <item>
       <title>Twenty Billion Tokens of What, Exactly?</title>
-      <link>http://localhost:1313/writing/20b-tokens-of-what/</link>
+      <link>https://hackbot.dad/writing/20b-tokens-of-what/</link>
       <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/writing/20b-tokens-of-what/</guid>
+      <guid>https://hackbot.dad/writing/20b-tokens-of-what/</guid>
       <description>Looking at the data and letting it look back at us.</description>
     </item>
     <item>
       <title>Pretraining at home: 20B tokens from 222 hours to 12</title>
-      <link>http://localhost:1313/writing/pretraining-at-home/</link>
+      <link>https://hackbot.dad/writing/pretraining-at-home/</link>
       <pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/writing/pretraining-at-home/</guid>
+      <guid>https://hackbot.dad/writing/pretraining-at-home/</guid>
       <description>Optimizing training a Llama 3.2 1B model so we can pretrain in a day without going broke.</description>
     </item>
   </channel>

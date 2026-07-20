@@ -1,11 +1,12 @@
 ---
-title: "Papers"
+title: "Research"
 layout: "papers"
 url: "/papers/"
 summary: "Shane Caldwell's research papers and publications"
+description: "Research on autonomous security agents, oversight, and evaluation."
 ---
 
-{{< paper title="PentestJudge: Judging Agent Behavior Against Operational Requirements" authors="Shane Caldwell, Max Harley, Michael Kouremetis, Vincent Abruzzo, Will Pearce" date="August 4th, 2025" url="https://arxiv.org/abs/2508.02921" >}}
+{{< paper title="PentestJudge: Judging Agent Behavior Against Operational Requirements" authors="Shane Caldwell, Max Harley, Michael Kouremetis, Vincent Abruzzo, Will Pearce" date="August 4th, 2025" url="https://arxiv.org/abs/2508.02921" featured="true" >}}
 We introduce PentestJudge, a system for evaluating the operations of penetration testing agents.
 {{< /paper >}}
 

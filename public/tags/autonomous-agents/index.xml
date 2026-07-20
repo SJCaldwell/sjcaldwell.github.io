@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Autonomous-Agents on Shane Caldwell</title>
-    <link>http://localhost:1313/tags/autonomous-agents/</link>
+    <link>https://hackbot.dad/tags/autonomous-agents/</link>
     <description>Recent content in Autonomous-Agents on Shane Caldwell</description>
     <image>
       <title>Shane Caldwell</title>
-      <url>http://localhost:1313/</url>
-      <link>http://localhost:1313/</link>
+      <url>https://hackbot.dad/</url>
+      <link>https://hackbot.dad/</link>
     </image>
     <generator>Hugo -- 0.146.2</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 Apr 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/autonomous-agents/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hackbot.dad/tags/autonomous-agents/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deep Reinforcement Learning for Security: Toward an Autonomous Pentesting Agent</title>
-      <link>http://localhost:1313/writing/towards-autonomous-pentesting/</link>
+      <link>https://hackbot.dad/writing/towards-autonomous-pentesting/</link>
       <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/writing/towards-autonomous-pentesting/</guid>
+      <guid>https://hackbot.dad/writing/towards-autonomous-pentesting/</guid>
       <description>An exploration of using deep reinforcement learning to create autonomous penetration testing agents, examining the challenges and potential solutions for automating cybersecurity assessments.</description>
     </item>
   </channel>
