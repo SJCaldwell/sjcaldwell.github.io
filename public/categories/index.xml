@@ -2,106 +2,113 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Shane Caldwell</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://hackbot.dad/categories/</link>
     <description>Recent content in Categories on Shane Caldwell</description>
     <image>
       <title>Shane Caldwell</title>
-      <url>http://localhost:1313/</url>
-      <link>http://localhost:1313/</link>
+      <url>https://hackbot.dad/</url>
+      <link>https://hackbot.dad/</link>
     </image>
     <generator>Hugo -- 0.146.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://hackbot.dad/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Evals</title>
-      <link>http://localhost:1313/categories/evals/</link>
-      <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/evals/</guid>
+      <link>https://hackbot.dad/categories/evals/</link>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://hackbot.dad/categories/evals/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Judge</title>
+      <link>https://hackbot.dad/categories/judge/</link>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://hackbot.dad/categories/judge/</guid>
       <description></description>
     </item>
     <item>
       <title>Llms</title>
-      <link>http://localhost:1313/categories/llms/</link>
-      <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/llms/</guid>
+      <link>https://hackbot.dad/categories/llms/</link>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://hackbot.dad/categories/llms/</guid>
       <description></description>
     </item>
     <item>
       <title>Systems</title>
-      <link>http://localhost:1313/categories/systems/</link>
+      <link>https://hackbot.dad/categories/systems/</link>
       <pubDate>Mon, 05 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/systems/</guid>
+      <guid>https://hackbot.dad/categories/systems/</guid>
       <description></description>
     </item>
     <item>
       <title>Decentralized</title>
-      <link>http://localhost:1313/categories/decentralized/</link>
+      <link>https://hackbot.dad/categories/decentralized/</link>
       <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/decentralized/</guid>
+      <guid>https://hackbot.dad/categories/decentralized/</guid>
       <description></description>
     </item>
     <item>
       <title>Training</title>
-      <link>http://localhost:1313/categories/training/</link>
+      <link>https://hackbot.dad/categories/training/</link>
       <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/training/</guid>
+      <guid>https://hackbot.dad/categories/training/</guid>
       <description></description>
     </item>
     <item>
       <title>Data</title>
-      <link>http://localhost:1313/categories/data/</link>
+      <link>https://hackbot.dad/categories/data/</link>
       <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/data/</guid>
+      <guid>https://hackbot.dad/categories/data/</guid>
       <description></description>
     </item>
     <item>
       <title>Offsec</title>
-      <link>http://localhost:1313/categories/offsec/</link>
+      <link>https://hackbot.dad/categories/offsec/</link>
       <pubDate>Tue, 28 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/offsec/</guid>
+      <guid>https://hackbot.dad/categories/offsec/</guid>
       <description></description>
     </item>
     <item>
       <title>Distributed</title>
-      <link>http://localhost:1313/categories/distributed/</link>
+      <link>https://hackbot.dad/categories/distributed/</link>
       <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/distributed/</guid>
+      <guid>https://hackbot.dad/categories/distributed/</guid>
       <description></description>
     </item>
     <item>
       <title>RL</title>
-      <link>http://localhost:1313/categories/rl/</link>
+      <link>https://hackbot.dad/categories/rl/</link>
       <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/rl/</guid>
+      <guid>https://hackbot.dad/categories/rl/</guid>
       <description></description>
     </item>
     <item>
       <title>Fp</title>
-      <link>http://localhost:1313/categories/fp/</link>
+      <link>https://hackbot.dad/categories/fp/</link>
       <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/fp/</guid>
+      <guid>https://hackbot.dad/categories/fp/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
-      <link>http://localhost:1313/categories/programming/</link>
+      <link>https://hackbot.dad/categories/programming/</link>
       <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/programming/</guid>
+      <guid>https://hackbot.dad/categories/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>AI</title>
-      <link>http://localhost:1313/categories/ai/</link>
+      <link>https://hackbot.dad/categories/ai/</link>
       <pubDate>Sun, 02 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/ai/</guid>
+      <guid>https://hackbot.dad/categories/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Security</title>
-      <link>http://localhost:1313/categories/security/</link>
+      <link>https://hackbot.dad/categories/security/</link>
       <pubDate>Sun, 02 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/security/</guid>
+      <guid>https://hackbot.dad/categories/security/</guid>
       <description></description>
     </item>
   </channel>

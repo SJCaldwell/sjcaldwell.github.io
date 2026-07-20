@@ -52,7 +52,7 @@ minify:
 params:
   env: production
   title: "Shane Caldwell"
-  description: "AI Security Researcher - working on hackbots."
+  description: "AI security researcher working on oversight, evaluation, and autonomous agents."
   keywords: [Blog, Portfolio, AI Security, Cybersecurity, Machine Learning]
   author: "Shane Caldwell"
   images: [""]
@@ -89,6 +89,13 @@ params:
     - path: "/writing/agony-and-ecstasy-evals"
     - path: "/writing/offsec-evals-dark-forest"  
     - path: "/writing/pretraining-at-home"
+
+  latestPaper:
+    title: "PentestJudge: Judging Agent Behavior Against Operational Requirements"
+    date: "August 2025"
+    url: "https://arxiv.org/abs/2508.02921"
+    label: "Latest research"
+    summary: "A system for evaluating whether penetration-testing agents satisfy operational requirements, not merely whether their final answers look correct."
 
   assets:
     disableHLJS: false
@@ -140,20 +147,20 @@ params:
 menu:
   main:
     - identifier: main
-      name: Main
+      name: Home
       url: /
       weight: 10
     - identifier: papers
-      name: Papers
+      name: Research
       url: /papers/
       weight: 20
-    - identifier: talks
-      name: Talks
-      url: /talks/
-      weight: 30
     - identifier: writing
       name: Writing
       url: /writing/
+      weight: 30
+    - identifier: talks
+      name: Talks
+      url: /talks/
       weight: 40
 
 # RSS configuration
