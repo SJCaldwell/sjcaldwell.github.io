@@ -1,128 +1,4 @@
-{{/* Custom copy button styling and functionality */}}
-<style>
-.copy-code {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    background: var(--tertiary);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    color: var(--secondary);
-    cursor: pointer;
-    transition: all 0.2s ease;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    z-index: 10;
-}
-
-.copy-code:hover {
-    background: var(--secondary);
-    color: var(--theme);
-}
-
-.copy-code svg {
-    width: 16px;
-    height: 16px;
-}
-
-/* Ensure no conflicting copy buttons exist */
-.copy, .highlight .copy {
-    display: none !important;
-}
-
-/* Position relative for code blocks */
-pre {
-    position: relative;
-}
-</style>
-
-<script>
-// Wait for DOM to be fully loaded and ensure no conflicting scripts
-document.addEventListener('DOMContentLoaded', function() {
-    // Remove any existing copy buttons
-    document.querySelectorAll('.copy, [class*="copy"]').forEach(el => {
-        if (!el.classList.contains('copy-code')) {
-            el.remove();
-        }
-    });
-    
-    // Clear any existing copy button event listeners by cloning nodes
-    const pres = document.querySelectorAll('pre');
-    pres.forEach(pre => {
-        const newPre = pre.cloneNode(true);
-        pre.parentNode.replaceChild(newPre, pre);
-    });
-    
-    // Add our custom copy buttons to the new clean pre elements
-    document.querySelectorAll('pre code').forEach(codeBlock => {
-        const pre = codeBlock.parentElement;
-        
-        // Skip if button already exists
-        if (pre.querySelector('.copy-code')) return;
-        
-        const button = document.createElement('button');
-        button.classList.add('copy-code');
-        button.setAttribute('aria-label', 'Copy code');
-        button.setAttribute('type', 'button');
-        
-        // Copy icon SVG
-        const copyIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>`;
-        
-        // Checkmark icon SVG
-        const checkIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>`;
-        
-        button.innerHTML = copyIcon;
-
-        function showSuccess() {
-            button.innerHTML = checkIcon;
-            button.style.color = '#10b981';
-            setTimeout(() => {
-                button.innerHTML = copyIcon;
-                button.style.color = '';
-            }, 2000);
-        }
-
-        button.addEventListener('click', function(event) {
-            event.preventDefault();
-            event.stopPropagation();
-            const textToCopy = codeBlock.textContent || codeBlock.innerText;
-            
-            if (navigator.clipboard) {
-                navigator.clipboard.writeText(textToCopy).then(() => {
-                    showSuccess();
-                }).catch(() => {
-                    fallbackCopy(textToCopy);
-                });
-            } else {
-                fallbackCopy(textToCopy);
-            }
-        });
-
-        function fallbackCopy(text) {
-            const textArea = document.createElement('textarea');
-            textArea.value = text;
-            textArea.style.position = 'fixed';
-            textArea.style.opacity = '0';
-            document.body.appendChild(textArea);
-            textArea.select();
-            try {
-                document.execCommand('copy');
-                showSuccess();
-            } catch (err) {
-                console.error('Copy failed:', err);
-            }
-            document.body.removeChild(textArea);
-        }
-
-        pre.appendChild(button);
-    });
-});
-</script>
-
-{{/* MathJax Configuration */}}
+{{/* MathJax: preserve TeX support without changing article typography. */}}
 <script>
 window.MathJax = {
   tex: {
@@ -131,202 +7,149 @@ window.MathJax = {
     processEscapes: true,
     processEnvironments: true
   },
-  chtml: {
-    scale: 1.0,
-    mtextInheritFont: false,
-    matchFontHeight: false
-  },
-  options: {
-    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-  },
-  startup: {
-    pageReady: () => {
-      return MathJax.startup.defaultPageReady().then(() => {
-        // Remove any overflow styling MathJax might add
-        document.querySelectorAll('mjx-container').forEach(container => {
-          container.style.overflow = 'visible';
-        });
-      });
-    }
-  }
+  options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
 };
 </script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"></script>
 
-{{/* Footnote Hover Popups */}}
-<style>
-.footnote-popup {
-    position: absolute;
-    background: var(--theme);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 12px 16px;
-    max-width: 300px;
-    font-size: 0.85em;
-    line-height: 1.4;
-    z-index: 1000;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    font-family: var(--font-mono);
-    color: var(--primary);
-    display: none;
-    pointer-events: auto;
-    word-wrap: break-word;
-}
-
-.dark .footnote-popup {
-    background: #2d2d2d;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.footnote-popup::before {
-    content: '';
-    position: absolute;
-    top: -6px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 12px;
-    height: 12px;
-    background: var(--theme);
-    border: 1px solid var(--border);
-    border-bottom: none;
-    border-right: none;
-    rotate: 45deg;
-}
-
-.dark .footnote-popup::before {
-    background: #2d2d2d;
-}
-
-/* Style footnote links to be more prominent */
-.footnote-ref {
-    text-decoration: none !important;
-    font-weight: 700;
-    padding: 2px 6px;
-    border-radius: 4px;
-    background: var(--primary);
-    color: var(--theme) !important;
-    transition: all 0.2s ease;
-    position: relative;
-    border: 1px solid var(--border);
-    font-size: 0.8em;
-    line-height: 1.2;
-    display: inline-block;
-    min-width: 18px;
-    text-align: center;
-    margin: 0 1px;
-    vertical-align: baseline;
-}
-
-.footnote-ref:hover {
-    background: var(--secondary);
-    color: var(--theme) !important;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.dark .footnote-ref {
-    background: #ffffff;
-    color: #000000 !important;
-    border: 1px solid #666666;
-}
-
-.dark .footnote-ref:hover {
-    background: #e5e5e5;
-    color: #000000 !important;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-}
-</style>
-
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    let currentPopup = null;
-    let hideTimeout = null;
+document.addEventListener('DOMContentLoaded', function () {
+  const article = document.querySelector('.post-single');
+  if (!article) return;
 
-    function createFootnotePopup(footnoteId, content) {
-        const popup = document.createElement('div');
-        popup.className = 'footnote-popup';
-        popup.innerHTML = content;
-        document.body.appendChild(popup);
-        return popup;
-    }
+  // A minimal reading-progress rule rewards long articles without adding chrome.
+  const progress = document.createElement('div');
+  progress.id = 'reading-progress';
+  progress.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(progress);
 
-    function showPopup(link, popup) {
-        if (hideTimeout) {
-            clearTimeout(hideTimeout);
-            hideTimeout = null;
-        }
+  const updateProgress = function () {
+    const content = article.querySelector('.post-content');
+    if (!content) return;
+    const start = content.offsetTop;
+    const distance = Math.max(1, content.offsetHeight - window.innerHeight);
+    const value = Math.min(1, Math.max(0, (window.scrollY - start) / distance));
+    progress.style.width = (value * 100) + '%';
+  };
+  updateProgress();
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  window.addEventListener('resize', updateProgress);
 
-        const rect = link.getBoundingClientRect();
-        const popupRect = popup.getBoundingClientRect();
-        
-        // Position popup above the footnote link
-        let left = rect.left + (rect.width / 2) - (popup.offsetWidth / 2);
-        let top = rect.top - popup.offsetHeight - 10;
+  // Desktop: a persistent TOC rail. Mobile: a compact, user-controlled disclosure.
+  const tocDetails = article.querySelector('.toc details');
+  const syncToc = function () {
+    if (!tocDetails) return;
+    tocDetails.open = window.matchMedia('(min-width: 1050px)').matches;
+  };
+  syncToc();
+  window.addEventListener('resize', syncToc);
 
-        // Ensure popup doesn't go off screen
-        if (left < 10) left = 10;
-        if (left + popup.offsetWidth > window.innerWidth - 10) {
-            left = window.innerWidth - popup.offsetWidth - 10;
-        }
-        if (top < 10) {
-            top = rect.bottom + 10; // Show below if no room above
-        }
+  const tocLinks = Array.from(article.querySelectorAll('.toc a[href^="#"]'));
+  if ('IntersectionObserver' in window && tocLinks.length) {
+    const linksById = new Map(tocLinks.map(function (link) {
+      return [decodeURIComponent(link.hash.slice(1)), link];
+    }));
+    const headings = Array.from(article.querySelectorAll('.post-content h2[id], .post-content h3[id]'));
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        tocLinks.forEach(function (link) { link.classList.remove('is-active'); });
+        const active = linksById.get(entry.target.id);
+        if (active) active.classList.add('is-active');
+      });
+    }, { rootMargin: '-18% 0px -70% 0px' });
+    headings.forEach(function (heading) { observer.observe(heading); });
+  }
 
-        popup.style.left = left + window.scrollX + 'px';
-        popup.style.top = top + window.scrollY + 'px';
-        popup.style.display = 'block';
-        
-        currentPopup = popup;
-    }
+  // Copy buttons stay terse and work for both highlighted and plain code blocks.
+  article.querySelectorAll('pre > code').forEach(function (code) {
+    const pre = code.parentElement;
+    if (pre.querySelector('.copy-code')) return;
+    const button = document.createElement('button');
+    button.className = 'copy-code';
+    button.type = 'button';
+    button.textContent = 'Copy';
+    button.setAttribute('aria-label', 'Copy code to clipboard');
+    button.addEventListener('click', async function () {
+      try {
+        await navigator.clipboard.writeText(code.textContent || '');
+        button.textContent = 'Copied';
+        window.setTimeout(function () { button.textContent = 'Copy'; }, 1600);
+      } catch (_) {
+        button.textContent = 'Select + copy';
+      }
+    });
+    pre.appendChild(button);
+  });
 
-    function hidePopup() {
-        hideTimeout = setTimeout(() => {
-            if (currentPopup) {
-                currentPopup.style.display = 'none';
-                currentPopup = null;
-            }
-        }, 150);
-    }
+  // Footnotes remain in the document, with an additional contextual reading layer.
+  let popover = null;
+  let hideTimer = null;
 
-    // Find all footnote links and add hover functionality
-    document.querySelectorAll('a.footnote-ref').forEach(link => {
-        const footnoteId = link.getAttribute('href');
-        if (!footnoteId) return;
-        const footnoteElement = document.querySelector(footnoteId.replace(/:/g, '\\:'));
-        
-        if (!footnoteElement) return;
-        
-        // Get footnote content, removing the back reference
-        const footnoteContent = footnoteElement.innerHTML
-            .replace(/<a[^>]*href="#fnref[^"]*"[^>]*>.*?<\/a>/g, '')
-            .trim();
-        
-        if (!footnoteContent) return;
+  const closePopover = function () {
+    if (hideTimer) window.clearTimeout(hideTimer);
+    if (popover) popover.remove();
+    popover = null;
+    article.querySelectorAll('.footnote-ref[aria-expanded="true"]').forEach(function (ref) {
+      ref.setAttribute('aria-expanded', 'false');
+    });
+  };
 
-        const popup = createFootnotePopup(footnoteId, footnoteContent);
-        
-        link.addEventListener('mouseenter', () => {
-            showPopup(link, popup);
-        });
-        
-        link.addEventListener('mouseleave', hidePopup);
-        
-        // Keep popup visible when hovering over the popup itself
-        popup.addEventListener('mouseenter', () => {
-            if (hideTimeout) {
-                clearTimeout(hideTimeout);
-                hideTimeout = null;
-            }
-        });
-        
-        popup.addEventListener('mouseleave', hidePopup);
+  const openPopover = function (ref) {
+    closePopover();
+    const targetId = decodeURIComponent(ref.hash.slice(1));
+    const note = document.getElementById(targetId);
+    if (!note) return;
+
+    popover = document.createElement('aside');
+    popover.className = 'footnote-popover';
+    popover.setAttribute('role', 'note');
+    popover.innerHTML = '<span class="footnote-popover__label">Note ' + ref.textContent.trim() + '</span>' + note.innerHTML + '<button class="footnote-popover__close" type="button" aria-label="Close footnote">×</button>';
+    document.body.appendChild(popover);
+    ref.setAttribute('aria-expanded', 'true');
+
+    const close = popover.querySelector('.footnote-popover__close');
+    close.addEventListener('click', closePopover);
+    popover.addEventListener('mouseenter', function () {
+      if (hideTimer) window.clearTimeout(hideTimer);
+    });
+    popover.addEventListener('mouseleave', function () {
+      if (!window.matchMedia('(max-width: 640px)').matches) hideTimer = window.setTimeout(closePopover, 120);
     });
 
-    // Hide popup when scrolling
-    window.addEventListener('scroll', () => {
-        if (currentPopup) {
-            currentPopup.style.display = 'none';
-            currentPopup = null;
-        }
+    if (!window.matchMedia('(max-width: 640px)').matches) {
+      const rect = ref.getBoundingClientRect();
+      const width = popover.offsetWidth;
+      let left = rect.left + window.scrollX - (width / 2) + (rect.width / 2);
+      left = Math.max(16, Math.min(left, window.scrollX + window.innerWidth - width - 16));
+      let top = rect.top + window.scrollY - popover.offsetHeight - 12;
+      if (top < window.scrollY + 12) top = rect.bottom + window.scrollY + 12;
+      popover.style.left = left + 'px';
+      popover.style.top = top + 'px';
+    }
+  };
+
+  article.querySelectorAll('a.footnote-ref').forEach(function (ref) {
+    ref.setAttribute('aria-expanded', 'false');
+    ref.addEventListener('mouseenter', function () {
+      if (!window.matchMedia('(max-width: 640px)').matches) openPopover(ref);
     });
+    ref.addEventListener('mouseleave', function () {
+      if (!window.matchMedia('(max-width: 640px)').matches) hideTimer = window.setTimeout(closePopover, 120);
+    });
+    ref.addEventListener('focus', function () {
+      if (!window.matchMedia('(max-width: 640px)').matches) openPopover(ref);
+    });
+    ref.addEventListener('click', function (event) {
+      if (!window.matchMedia('(max-width: 640px)').matches) return;
+      event.preventDefault();
+      if (ref.getAttribute('aria-expanded') === 'true') closePopover();
+      else openPopover(ref);
+    });
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') closePopover();
+  });
 });
 </script>

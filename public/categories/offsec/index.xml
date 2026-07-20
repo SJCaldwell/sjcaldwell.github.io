@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Offsec on Shane Caldwell</title>
-    <link>http://localhost:1313/categories/offsec/</link>
+    <link>https://hackbot.dad/categories/offsec/</link>
     <description>Recent content in Offsec on Shane Caldwell</description>
     <image>
       <title>Shane Caldwell</title>
-      <url>http://localhost:1313/</url>
-      <link>http://localhost:1313/</link>
+      <url>https://hackbot.dad/</url>
+      <link>https://hackbot.dad/</link>
     </image>
     <generator>Hugo -- 0.146.2</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/offsec/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hackbot.dad/categories/offsec/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Offsec Evals: Growing Up In The Dark Forest</title>
-      <link>http://localhost:1313/writing/offsec-evals-dark-forest/</link>
+      <link>https://hackbot.dad/writing/offsec-evals-dark-forest/</link>
       <pubDate>Tue, 28 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/writing/offsec-evals-dark-forest/</guid>
+      <guid>https://hackbot.dad/writing/offsec-evals-dark-forest/</guid>
       <description>If you contribute a public benchmark, are you giving free capability to your competitors?</description>
     </item>
   </channel>

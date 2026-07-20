@@ -3,6 +3,7 @@ title: "Talks"
 layout: "talks"
 url: "/talks/"
 summary: "Conference presentations and recorded talks"
+description: "Conference talks on offensive security, autonomous agents, and machine learning systems."
 ---
 
 {{< talk title="Benchmarks to Breaches: Scaling Offensive Security" collaborators="Delivered with [Nick Landers](https://x.com/monoxgas)" event="Offensive AI Con 2025" slides="https://github.com/Offensive-AI-Con/OAIC-2025/blob/main/media/slides/day-two/nick-landers-shane-caldwell-benchmarks-to-breaches/slides.pdf" recording="https://www.youtube.com/watch?v=YfvVBbQmPaY" >}}

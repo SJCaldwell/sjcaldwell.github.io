@@ -1,0 +1,40 @@
+{{- define "main" }}
+<header class="writing-header">
+  <p class="eyebrow">Essays, field notes, and technical deep dives</p>
+  <h1>{{ .Title }}</h1>
+  <p>Long-form work on autonomous agents, evaluation, machine learning systems, and offensive security.</p>
+</header>
+
+<nav class="topic-nav" aria-label="Browse writing by topic">
+  <span>Explore</span>
+  <a href="/tags/evals/">Evaluation</a>
+  <a href="/categories/security/">Security</a>
+  <a href="/tags/llms/">LLMs</a>
+  <a href="/tags/training/">Training</a>
+  <a href="/tags/research/">Research</a>
+</nav>
+
+{{- range (.Pages.ByDate.Reverse.GroupByDate "2006") }}
+<section class="year-group" aria-labelledby="year-{{ .Key }}">
+  <h2 id="year-{{ .Key }}">{{ .Key }}</h2>
+  <div class="archive-list">
+    {{- range .Pages }}
+    <article class="archive-entry">
+      <a href="{{ .RelPermalink }}">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02" }}</time>
+        <div>
+          <h3>{{ .Title }}</h3>
+          <p>{{ .Summary | plainify | htmlUnescape }}</p>
+          <div class="archive-entry__tags">
+            {{- range first 3 .Params.categories }}<span>{{ . }}</span>{{- end }}
+            <span>{{ .ReadingTime }} min</span>
+          </div>
+        </div>
+        <span class="archive-entry__arrow" aria-hidden="true">→</span>
+      </a>
+    </article>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+{{- end }}
