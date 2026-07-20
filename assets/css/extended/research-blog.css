@@ -185,8 +185,10 @@ button#theme-toggle svg {
 
 .research-hero h1 em {
   color: var(--accent);
-  font-family: var(--font-serif);
-  font-weight: 400;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: inherit;
 }
 
 .research-hero__dek {
