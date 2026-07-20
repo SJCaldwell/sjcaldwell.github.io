@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Full Contact Alignment">
+  <rect width="64" height="64" fill="#111713"/>
+  <g fill="none" stroke="#edf1ed" stroke-width="7" stroke-linecap="butt" stroke-linejoin="round">
+    <path d="M29 17h-6a6 6 0 0 0-6 6v6"/>
+    <path d="M35 17h6a6 6 0 0 1 6 6v6"/>
+    <path d="M47 35v6a6 6 0 0 1-6 6h-6"/>
+    <path d="M29 47h-6a6 6 0 0 1-6-6v-6"/>
+  </g>
+  <circle cx="32" cy="32" r="4" fill="#72c69f"/>
+</svg>
