@@ -1,5 +1,6 @@
 /* Editorial system for hackbot.dad --------------------------------------- */
 :root {
+  color-scheme: light;
   --theme: #f7f6f1;
   --entry: #f7f6f1;
   --primary: #18231e;
@@ -23,7 +24,28 @@
   --radius: 3px;
 }
 
+/* Follow the visitor's system preference until they choose a theme. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    --theme: #111713;
+    --entry: #141c17;
+    --primary: #edf1ed;
+    --secondary: #a4afa7;
+    --tertiary: #344139;
+    --content: #d8ded9;
+    --border: #303b34;
+    --code-bg: #222c26;
+    --code-block-bg: #0a0f0c;
+    --accent: #72c69f;
+    --accent-soft: #1d382b;
+    --accent-contrast: #0d1711;
+  }
+}
+
+:root[data-theme="dark"],
 .dark {
+  color-scheme: dark;
   --theme: #111713;
   --entry: #141c17;
   --primary: #edf1ed;
@@ -37,6 +59,8 @@
   --accent-soft: #1d382b;
   --accent-contrast: #0d1711;
 }
+
+:root[data-theme="light"] { color-scheme: light; }
 
 html {
   scroll-behavior: smooth;
@@ -98,19 +122,33 @@ a { text-underline-offset: 0.18em; }
 
 button#theme-toggle {
   display: grid;
-  width: 32px;
-  height: 32px;
+  width: 38px;
+  height: 38px;
   margin: 0;
   padding: 0;
+  border: 1px solid transparent;
+  border-radius: 50%;
   place-items: center;
   color: var(--secondary);
+  background: transparent;
   line-height: 1;
+  transition: color 160ms ease, background-color 160ms ease;
 }
 
 .logo-switches {
   display: flex;
   align-items: center;
-  margin: 0 0 0 8px;
+  margin: 0 var(--gap) 0 18px;
+}
+
+button#theme-toggle:hover {
+  color: var(--primary);
+  background: var(--accent-soft);
+}
+
+button#theme-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 button#theme-toggle svg {
@@ -119,7 +157,11 @@ button#theme-toggle svg {
   height: 18px;
 }
 
-#menu { gap: 28px; }
+#menu {
+  gap: 28px;
+  margin-right: 0;
+  margin-left: auto;
+}
 #menu li + li { margin: 0; }
 
 #menu a {
@@ -859,10 +901,11 @@ button#theme-toggle svg {
   .nav { flex-wrap: nowrap; }
   .logo, #menu { margin: 0 16px; }
   .logo a { font-size: 15px; white-space: nowrap; }
-  .logo-switches { margin-left: 4px; }
-  #menu { gap: 15px; margin-left: auto; overflow: visible; }
+  .logo-switches { margin: 0 16px 0 10px; }
+  #menu { gap: 15px; margin-right: 0; margin-left: auto; overflow: visible; }
   #menu li:first-child { display: none; }
   #menu a { font-size: 12px; }
+  button#theme-toggle { width: 44px; height: 44px; }
 
   .research-hero {
     grid-template-columns: 1fr;

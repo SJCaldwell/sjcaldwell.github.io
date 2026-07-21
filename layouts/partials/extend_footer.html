@@ -1,3 +1,53 @@
+{{/* Keep the visible control, explicit override, and live OS preference in sync. */}}
+<script>
+(function () {
+  const root = document.documentElement;
+  const toggle = document.getElementById('theme-toggle');
+  const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+  if (!toggle) return;
+
+  const savedTheme = function () {
+    try {
+      const theme = localStorage.getItem('pref-theme');
+      return theme === 'light' || theme === 'dark' ? theme : null;
+    } catch (_) {
+      return null;
+    }
+  };
+
+  const updateControl = function (theme) {
+    const isDark = theme === 'dark';
+    const label = 'Switch to ' + (isDark ? 'light' : 'dark') + ' color scheme';
+    toggle.setAttribute('aria-label', label);
+    toggle.setAttribute('aria-pressed', String(isDark));
+    toggle.title = label + ' (Alt + T)';
+  };
+
+  updateControl(document.body.classList.contains('dark') ? 'dark' : 'light');
+
+  toggle.addEventListener('click', function () {
+    const nextTheme = document.body.classList.contains('dark') ? 'light' : 'dark';
+    root.dataset.theme = nextTheme;
+    updateControl(nextTheme);
+  });
+
+  const followSystemTheme = function (event) {
+    if (savedTheme()) return;
+    const theme = event.matches ? 'dark' : 'light';
+    root.removeAttribute('data-theme');
+    document.body.classList.toggle('dark', event.matches);
+    updateControl(theme);
+  };
+
+  if (systemTheme.addEventListener) {
+    systemTheme.addEventListener('change', followSystemTheme);
+  } else if (systemTheme.addListener) {
+    systemTheme.addListener(followSystemTheme);
+  }
+})();
+</script>
+
 {{/* MathJax: preserve TeX support without changing article typography. */}}
 <script>
 window.MathJax = {

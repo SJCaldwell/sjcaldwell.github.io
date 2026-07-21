@@ -1,6 +1,18 @@
 {{/* Deployment verification */}}
 {{ if eq hugo.Environment "production" }}{{ with getenv "GITHUB_SHA" }}<meta name="build-id" content="{{ . }}">{{ end }}{{ end }}
 
+{{/* Apply an explicit visitor choice before the page paints. Without one, CSS follows the OS preference. */}}
+<script>
+(function () {
+  try {
+    const theme = localStorage.getItem('pref-theme');
+    if (theme === 'light' || theme === 'dark') {
+      document.documentElement.dataset.theme = theme;
+    }
+  } catch (_) {}
+})();
+</script>
+
 {{/* Icons and browser chrome */}}
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
