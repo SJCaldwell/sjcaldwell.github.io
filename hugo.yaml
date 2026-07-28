@@ -91,11 +91,11 @@ params:
     - path: "/writing/pretraining-at-home"
 
   latestPaper:
-    title: "PentestJudge: Judging Agent Behavior Against Operational Requirements"
-    date: "August 2025"
-    url: "https://arxiv.org/abs/2508.02921"
+    title: "ScopeJudge: Cost-Aware Pre-Execution Gating for Offensive Security Agents"
+    date: "July 2026"
+    url: "https://arxiv.org/abs/2607.07774"
     label: "Latest research"
-    summary: "A system for evaluating whether penetration-testing agents satisfy operational requirements, not merely whether their final answers look correct."
+    summary: "A benchmark and cost-aware pre-execution gate for catching out-of-scope tool calls before offensive security agents execute them."
 
   assets:
     disableHLJS: false
