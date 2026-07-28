@@ -95,7 +95,7 @@ params:
     date: "July 2026"
     url: "https://arxiv.org/abs/2607.07774"
     label: "Latest research"
-    summary: "A benchmark and cost-aware pre-execution gate for catching out-of-scope tool calls before offensive security agents execute them."
+    summary: "A benchmark of 4,897 offensive-security agent tool calls for evaluating how well runtime monitors detect out-of-scope actions as the amount of available context varies."
 
   assets:
     disableHLJS: false
