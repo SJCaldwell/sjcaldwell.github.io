@@ -8,6 +8,15 @@
       <a class="text-link" href="/papers/">View research <span aria-hidden="true">→</span></a>
       <a class="text-link text-link--quiet" href="https://dreadnode.io/">Dreadnode <span aria-hidden="true">↗</span></a>
     </div>
+    <nav class="research-hero__socials" aria-label="Social profiles">
+      {{- range .Site.Params.socialIcons }}
+        {{- if in (slice "x" "linkedin" "github") .name }}
+      <a href="{{ trim .url " " | safeURL }}" target="_blank" rel="noopener noreferrer me" aria-label="{{ .title }}" title="{{ .title }}">
+        {{- partial "svg.html" . }}
+      </a>
+        {{- end }}
+      {{- end }}
+    </nav>
   </div>
   <div class="research-hero__portrait">
     <img src="/profile.jpg" alt="Shane Caldwell speaking at a conference" width="240" height="240">
