@@ -618,6 +618,15 @@ button#theme-toggle svg {
 .paper-meta,
 .talk-collaborators,
 .talk-details { color: var(--secondary); font-size: 13px; }
+.paper-accolade {
+  width: fit-content;
+  margin-top: 14px;
+  padding-left: 11px;
+  border-left: 2px solid var(--accent);
+  color: var(--secondary);
+  font-size: 13px;
+  line-height: 1.45;
+}
 .paper-abstract { margin-top: 18px; color: var(--content); font-family: var(--font-serif); font-size: 17px; line-height: 1.55; }
 .talk-details { gap: 10px; }
 .talk-recording a,

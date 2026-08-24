@@ -3,6 +3,7 @@
 {{- $date := .Get "date" -}}
 {{- $url := .Get "url" -}}
 {{- $featured := .Get "featured" -}}
+{{- $accolade := .Get "accolade" -}}
 {{- $abstract := .Inner -}}
 
 <article class="paper-card{{ if $featured }} paper-card--featured{{ end }}">
@@ -17,6 +18,11 @@
             <div class="paper-authors">{{ $authors }}</div>
             <div class="paper-date">{{ $date }}</div>
         </div>
+        {{- with $accolade }}
+        <div class="paper-accolade">
+            <span>{{ . }}</span>
+        </div>
+        {{- end }}
     </div>
     <div class="paper-abstract">
         {{ $abstract | markdownify }}
