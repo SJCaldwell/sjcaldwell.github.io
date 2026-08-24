@@ -91,11 +91,11 @@ params:
     - path: "/writing/pretraining-at-home"
 
   latestPaper:
-    title: "ScopeJudge: Cost-Aware Pre-Execution Gating for Offensive Security Agents"
-    date: "July 2026"
-    url: "https://arxiv.org/abs/2607.07774"
+    title: "ProofJudge: Tool-Grounded LLM Evaluation of Formal Proof Quality in Mathlib"
+    date: "August 2026"
+    url: "https://arxiv.org/abs/2608.20432"
     label: "Latest research"
-    summary: "A benchmark of 4,897 offensive-security agent tool calls for evaluating how well runtime monitors detect out-of-scope actions as the amount of available context varies."
+    summary: 'We introduce a benchmark of Lean4 declaration preference, constructing a dataset of human preferences from initial and final PR revisions. An Agentic judge reviews the PRs in context and grades them, and is considered "aligned" if they rate the accepted revision over the rejected draft.'
 
   assets:
     disableHLJS: false
