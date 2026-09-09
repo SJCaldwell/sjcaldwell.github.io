@@ -3,9 +3,9 @@ title: "Evals Aren't Dead: They Need to Grow Up"
 date: 2025-08-17T00:00:00Z
 author: "Shane Caldwell"
 categories: ["llms", "evals"]
-tags: ["llms", "evals", "research"]
-description: "It's not 'evals' that are dead, but there's definitely a subset of easy ones that are dying."
-summary: "It's not 'evals' that are dead, but there's definitely a subset of easy ones that are dying."
+tags: ["llms", "evals"]
+description: "Put down that ruler and go build a microscope."
+summary: "Put down that ruler and go build a microscope."
 ShowToc: true
 TocOpen: false
 draft: false
@@ -71,7 +71,47 @@ When the rulers not enough, we invent a magnifying glass. When the magnifying gl
 
 We live in a world where the models are capable enough to [solve navier–stokes Millennium Prize Problem](https://openai.com/index/navier-stokes-solution/) and [collude on evals by hacking production infrastructure](https://www.youtube.com/watch?v=87DyyMV0kCY) and we are still mostly testing them on small docker environments and programatically defined win conditions. Are the models not capable of building better instruments to measure their capabilities? Or are we just lacking in our ambition to try and measure those things?
 
-## Agentic Judge Evals
+In no particular order, some particular evals or eval-techniques that I'm excited about. 
+
+## Terminal-Bench
+
+The 🐐.
+
+### Harness as first class
+
+From a pure empirics perspective, I'm excited about Terminal-Bench because it treats the harness itself as part of the measurement tuples of `<model, harness, success %>`. In many benchmarks the model just sits entirely alone. Obviously that's not the way things get run. Terminal-Bench represents that reality accurately!
+
+{{< figure src="glm-claude.png" alt="" caption="That's 30pp. We're not quibbling over noise here." >}}
+
+The harness still makes a large difference and eliminating its role in "model" performance usually just leads to an inability to actually stack rank models. [Consider recent Astra results in the ARC-AGI eval](https://arcprize.org/blog/astra).
+
+{{< figure src="openai-harness.png" alt="" caption="That's 30pp. We're not quibbling over noise here." >}}
+
+If you think benchmaxxing models is bad, consider what kind of priors are embedded in the "neurosymbolic system" when a harness is evolved to solve a particular problem or overcome a particular model weakness. 
+
+I always come back to when people were excited about [Claude 3.7 playing Pokemon](https://www.latent.space/p/how-claude-plays-pokemon-was-made). David Hershey, who developed the harness, was _very clear_ that Claude was not sufficiently good at vision to do pathfinding on its own. It had a tool that allowed it to submit screen coordinates it wanted to go to, and the emulator would resolve taking it there. This essentially allowed it to stop executing moves on a turn-by-turn basis and treat navigating as a higher-level "scripted" action. That doesn't mean it's not cool, but it does mean that all shock and awe should be modulated through the understanding that the model _can't see super well and needed a harness to help it with that_.
+
+In the following weeks, a bunch of different people took a swing at the problem of a particular model solving Pokemon. Often they did this by bringing their own harness that would have some alternative way of handling vision. By the time it got to twitter, it was "Gemini solves Pokemon faster!" completely obscuring that the models seemed roughly equally capable of playing Pokemon, and the controlling factor being vision affordances. 
+
+It's also just a bit more democratic! Model training is a high-resource endeavor. There are a few companies who have ability to throw enough compute to meaningfully change a benchmark standing. Harness development, however, is something that academics and private individuals can take a meaningful swing at - that should show up on the leaderboard, rather than being laundered in the individual model's performance!
+
+### Taking Quality Seriously
+
+Benchmarks are often broken. Like really broken! Tasks not solvable, tasks trivially solvable, tasks with significant information leakage, tasks that just aren't particularly interesting, and so on. By the time all those transcripts are flattened into a benchmark score, that's almost entirely hidden. It takes a lot[^2] of effort to check if the tasks are any good! 
+
+In Terminal-Bench, you can just [go see how a model did](https://hub.harborframework.com/jobs/a6319b9c-7dbc-42b1-8483-6c022e292ae2/trials/009ca21e-b5a3-48ff-b573-38ca9557c8bf) by looking directly at the trajectories. Here's the task description, how many turns/tokens/tools it took a monster like Fable to solve, etc.
+
+Great!
+
+You know how confident you have to be in your tasks to just show them directly? Very confident. How do you get that confident?
+
+{{< x id="2093041665120547029" user="StevenDillmann" >}}
+
+Violently whittling down over 900 tasks proposals to 70 tasks that are high quality enough to launch your _0.1_. This isn't done by accident, you can check out the [paper](https://arxiv.org/abs/2601.11868) to get a sense of how they construct such a high quality benchmark. While Tbench is the benchmark that is most "recognizable" out of all the benchmarks on this list (mechanistic verifiability, one-shot tasks) its commitment to quality and its hoisting of the harness to first-class attribute make it laudable to me. 
+
+## (Agentic) Judge Evals
+
+If you've met me in real life, you can probably skip this section. I'm always talking about this. 
 
 ## User Sim Evals
 
@@ -81,3 +121,5 @@ We live in a world where the models are capable enough to [solve navier–stokes
 
 
 [^1]: If you're interested, you can see them [here](https://aitp-conference.org/2026/).
+
+[^2]: Relative to scrolling twitter or looking at a PDF. It's not, like, Millenium prize problem hard.  
