@@ -23,7 +23,7 @@ There were several times an audience member would try to ask a speaker, basicall
 
 Almost always, the answer was no. At the most memorable point, a presenter offhandedly referred to an agent workflow creating a lot of proofs of "little mathematical value". As you might expect, that was an excellent question-that-is-more-of-a-comment point and could've absorbed the next day and a half of discussion if the chair hadn't stopped it. When the presenter failed to provide a solid definition of "mathematical value", an audience member quipped: ["You know it when you see it?"](https://en.wikipedia.org/wiki/I_know_it_when_I_see_it).
 
-It's not like they didn't know what evals are. They're very aware! Several speakers mentioned a desire to "make their work more empirical" or "get better numbers around the work they're doing".
+It's not like they didn't know what evals are. They're very aware. Several speakers mentioned a desire to "make their work more empirical" or "get better numbers around the work they're doing".
 
 I take this to mean that the methodology for evaluations that they're aware of failed to measure what they were interested in. In the absence of a near-at-hand way to transform what they're doing into something repeatable and measurable, they will prefer a vibes-based analysis of performance.
 
@@ -42,7 +42,7 @@ One day, though, you want to compare two objects that aren't particularly close 
 
 Having been burned several times, you work out the idea that you'll create a regular "unit" of measurement, and from that create a ruler. This allows you to get an "objective" measurement.
 
-Now you've got this independent unit, and can apply this measurement all over! That thing is X units long, this one's Y units long. I know this can fit in my house! I know the thing I'm talking about is shorter than the thing you're talking about! Peace throughout the land, merrymaking abounds, etc. Rulers are the best!
+Now you've got this independent unit, and can apply this measurement all over. That thing is X units long, this one's Y units long. I know this can fit in my house. I know the thing I'm talking about is shorter than the thing you're talking about. Peace throughout the land, merrymaking abounds, etc. Rulers are the best.
 
 Until, one day, you discover a series of objects whose difference in length is _significantly smaller_ than your unit of measurement. Your unit of measurement is insufficient to express a difference in their length. Worse, you can barely perceive them with your naked senses. Measuring length is dead! Measuring is dead! Empiricism is dead! Everything appears equally as long as everything else.
 
@@ -50,7 +50,7 @@ Except, that's not what happened. We measure subtle differences in sizes all the
 
 # New Evals
 
-"Evaluations" are just our way of getting a measure of how models perform at certain tasks. There are "rules", but those rules are pretty changeable!
+"Evaluations" are just our way of getting a measure of how models perform at certain tasks. There are "rules", but those rules are pretty changeable.
 
 Not long ago now, we used to care a lot about [MMLU](https://huggingface.co/datasets/cais/mmlu). We liked it for a few reasons:
 
@@ -64,7 +64,7 @@ That is, MMLU was an evaluation that was designed to function with the tools we 
 
 We then moved to a world where we measure _agents_. By default, we put those in a tool-calling harness, set it up facing a Docker container representing an environment, and we have some kind of Python function that checks whether what we wanted to have happen did in fact happen.
 
-That was great! It was also super parallelizable, we could get good abstractions around it, and it was "regular" enough that with some examples you could steer a model into making more of them, meaning you could mass-produce evaluations for things you knew a lot about with a mostly alright amount of reward hacking. That's how we got SWE-bench! That's how we got LiveCodeBench!
+That was great. It was also super parallelizable, we could get good abstractions around it, and it was "regular" enough that with some examples you could steer a model into making more of them, meaning you could mass-produce evaluations for things you knew a lot about with a mostly alright amount of reward hacking. That's how we got SWE-bench. That's how we got LiveCodeBench.
 
 When the ruler's not enough, we invent a magnifying glass. When the magnifying glass isn't enough, we invent the microscope.
 
@@ -78,9 +78,9 @@ I like Terminal-Bench because it treats the model and the harness as important e
 
 ### Harness as first class
 
-From a pure empirics perspective, I'm excited about Terminal-Bench because it treats the harness itself as part of the measurement tuples of `<model, harness, success %>`. In many benchmarks the model just sits entirely alone. Obviously that's not the way things get run. Terminal-Bench represents that reality accurately!
+From a pure empirics perspective, I'm excited about Terminal-Bench because it treats the harness itself as part of the measurement tuples of `<model, harness, success %>`. In many benchmarks the model just sits entirely alone. Obviously that's not the way things get run. Terminal-Bench represents that reality accurately.
 
-{{< figure src="glm-claude.png" alt="" caption="GLM 5.3 is pretty good - but it's very helpful to know that it's operating in Claude Code!" >}}
+{{< figure src="glm-claude.png" alt="" caption="GLM 5.3 is pretty good - but it's very helpful to know that it's operating in Claude Code." >}}
 
 The harness still makes a large difference and eliminating its role in "model" performance usually just leads to an inability to actually stack rank models. [Consider recent Astra results in the ARC-AGI eval](https://arcprize.org/blog/astra).
 
@@ -92,17 +92,15 @@ I always come back to when people were excited about [Claude 3.7 playing Pokemon
 
 In the following weeks, a bunch of different people took a swing at the problem of a particular model solving Pokemon. Often they did this by bringing their own harness that would have some alternative way of handling vision. By the time it got to twitter, it was "Gemini solves Pokemon faster!" completely obscuring that the models seemed roughly equally capable of playing Pokemon, and the controlling factor being vision affordances.
 
-It's also just a bit more democratic! Model training is a high-resource endeavor. There are a few companies who have ability to throw enough compute to meaningfully change a benchmark standing. Harness development, however, is something that academics and private individuals can take a meaningful swing at - that should show up on the leaderboard, rather than being laundered in the individual model's performance!
+It's also just a bit more democratic. Model training is a high-resource endeavor. There are a few companies who have ability to throw enough compute to meaningfully change a benchmark standing. Harness development, however, is something that academics and private individuals can take a meaningful swing at - that should show up on the leaderboard, rather than being laundered in the individual model's performance.
 
 ### Taking Quality Seriously
 
-Benchmarks are often broken. Like really broken! Tasks not solvable, tasks trivially solvable, tasks with significant information leakage, tasks that just aren't particularly interesting, and so on. By the time all those transcripts are flattened into a benchmark score, that's almost entirely hidden. It takes a lot[^2] of effort to check if the tasks are any good!
+Benchmarks are often broken. Like really broken. Tasks not solvable, tasks trivially solvable, tasks with significant information leakage, tasks that just aren't particularly interesting, and so on. By the time all those transcripts are flattened into a benchmark score, that's almost entirely hidden. It takes a lot[^2] of effort to check if the tasks are any good.
 
 In Terminal-Bench, you can just [go see how a model did](https://hub.harborframework.com/jobs/a6319b9c-7dbc-42b1-8483-6c022e292ae2/trials/009ca21e-b5a3-48ff-b573-38ca9557c8bf) by looking directly at the trajectories. Here's the task description, how many turns/tokens/tools it took a monster like Fable to solve, etc.
 
-Great!
-
-You know how confident you have to be in your tasks to just show them directly? Very confident. How do you get that confident?
+That's excellence. You know how confident you have to be in your tasks to just show them directly? Very confident. How do you get that confident?
 
 {{< x id="2093041665120547029" user="StevenDillmann" >}}
 
@@ -120,7 +118,7 @@ The idea of PaperBench is simple: here are 20 ICML papers from 2024 - can you re
 
 [`Code has been written to compute the F1-score of the frequency-threshold based forecasting function $g$ on $D_R^{test}$ using the predicted and ground-truth forgetting binary indicators $\\hat{z}_{ij}^{test}$ and $z_{ij}^{test}$.`](https://github.com/openai/frontier-evals/blob/main/project/paperbench/data/papers/what-will-my-model-forget/rubric.json#L154)
 
-These would all be incredibly difficult to write mechanistic verifiers for! Most of the work is inherently probabilistic. So you're gonna, what, implement some kind of `torch.isclose` for all of the values? How are you going to decide what's acceptable or not? This seems violently error prone.
+These would all be incredibly difficult to write mechanistic verifiers for. Most of the work is inherently probabilistic. So you're gonna, what, implement some kind of `torch.isclose` for all of the values? How are you going to decide what's acceptable or not? This seems violently error prone.
 
 I see similar things when people try to provide constraints to their environments. Let's say you're working on a capture-the-flag-style RL environment, and you want to know whether your agent got access to the flag in an appropriate way. Did the model cheat?
 
@@ -140,11 +138,11 @@ That's a bargain that's worth calibrating the models to human judgement and chec
 
 ## Monitor Evals
 
-Monitor research [seems](https://cdn.prod.website-files.com/663bd486c5e4c81588db7a1d/6a724858f7db25c81487016d_Security%20Incident%20INC-2026-07-28-01.pdf) [pretty](https://openai.com/index/hugging-face-incident-and-the-road-ahead/) [important](https://collusion.wiki/)!
+Monitor research [seems](https://cdn.prod.website-files.com/663bd486c5e4c81588db7a1d/6a724858f7db25c81487016d_Security%20Incident%20INC-2026-07-28-01.pdf) [pretty](https://openai.com/index/hugging-face-incident-and-the-road-ahead/) [important](https://collusion.wiki/).
 
 This is an interesting problem because it's basically a multi-agent system evaluation. Or, it should be. Lots of papers (including my own [ScopeJudge](https://arxiv.org/abs/2607.07774)) simplify it by treating it as a binary classification problem. There's precision and recall, and from that you get a decent idea about what would have been caught.
 
-Except - that's obviously not sufficient! If you choose to block a tool call and tell the agent so and let the session continue, the model behavior is going to change! You cannot test the value of a monitor by checking a static trajectory, you need it live. That is, the monitor as a control protocol becomes part of the neurosymbolic system you're evaluating. Terminal-Bench includes the model and the harness, the monitor model (and its harness) may be considered equally important to note in the future.
+Except - that's obviously not sufficient. If you choose to block a tool call and tell the agent so and let the session continue, the model behavior is going to change. You cannot test the value of a monitor by checking a static trajectory, you need it live. That is, the monitor as a control protocol becomes part of the neurosymbolic system you're evaluating. Terminal-Bench includes the model and the harness, the monitor model (and its harness) may be considered equally important to note in the future.
 
 I actually got dinged for this when we submitted our paper to [CAMLIS](https://www.camlis.org/cfp) and got a weak accept for it. I think that's entirely fair. I've got some active research on the monitoring thing I expect to be released in the next month or so.
 
@@ -166,7 +164,7 @@ Well, we can't replace you, the user. I told you we can't do it, and we can't do
 
 Mine the trajectory of a given chat for what the user provided. How did the user steer? What key knowledge did the user afford? Pull that out - that becomes the "script". Then a model takes that "oracle script" and acts as you when interacting with the model, literally acting as the `[User]` each turn. An LLM-as-a-judge could review those User turns before they execute to ensure they're not being too obvious, providing some kind of information out of turn.
 
-It's sort of similar to ideas in interactive theater or escape room games. Actors playing a person in character can respond basically to whatever you want. If you ask them about something trivial, they can respond any old way. If you ask them something specific about the story they're in, they're only allowed to give you certain clues. The performance is never _the same_ because the way they're interacted with is never the same, but it's close enough. If you and your friend went to the same interactive theater and they figured out something that you didn't, you wouldn't first say “Well, the actor gave it away to _you_ but not to _me_!” So there's a fixed hint budget that you may or may not exhaust as a resource, but it's there. The user simulation can provide something similar.
+It's sort of similar to ideas in interactive theater or escape room games. Actors playing a person in character can respond basically to whatever you want. If you ask them about something trivial, they can respond any old way. If you ask them something specific about the story they're in, they're only allowed to give you certain clues. The performance is never _the same_ because the way they're interacted with is never the same, but it's close enough. If you and your friend went to the same interactive theater and they figured out something that you didn't, you wouldn't first say “Well, the actor gave it away to _you_ but not to _me_.” So there's a fixed hint budget that you may or may not exhaust as a resource, but it's there. The user simulation can provide something similar.
 
 I was pretty excited about this and thought I was getting into pretty heady stuff, but Meta actually published something pretty similar with [SWE-Together](https://arxiv.org/abs/2606.29957) at the end of June. I think this is a great idea and I anticipate more people will be using it to try to understand concepts such as how _steerable_ a model is. It's also naturally closer to allowing us to evaluate models in the way they're actually being used (with user interaction) so models performing well in these scenarios or users being simulated well enough for models to be _trained_ in these scenarios is obviously good.
 
