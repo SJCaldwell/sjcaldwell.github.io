@@ -95,7 +95,7 @@ params:
     date: "September 2026"
     url: "https://arxiv.org/abs/2609.30325"
     label: "Latest research"
-    summary: "We introduce ScopeBench, a benchmark of 30 dead-end agentic security tasks that measures whether autonomous offensive-security agents respect engagement boundaries when completing the objective requires violating scope."
+    summary: "We introduce ScopeBench, a methodological pilot that measures whether autonomous offensive-security agents respect engagement boundaries when completing an objective requires violating scope. Finds scope adherence and capability can be measured independently."
 
   assets:
     disableHLJS: false
