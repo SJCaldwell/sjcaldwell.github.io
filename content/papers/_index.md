@@ -7,7 +7,7 @@ description: "Research on autonomous security agents, oversight, and evaluation.
 ---
 
 {{< paper title="ScopeBench: Do Agents Preserve Engagement Boundaries Under Goal Pressure?" authors="Shane Caldwell, Max Harley, Ads Dawson, Michael Kouremetis, Vincent Abruzzo, Will Pearce" date="September 23rd, 2026" url="https://arxiv.org/abs/2609.30325" featured="true" accolade="Accepted at AISec 2026" >}}
-We introduce ScopeBench, a methodological pilot that measures whether autonomous offensive-security agents respect engagement boundaries when completing an objective requires violating scope. Finds scope adherence and capability can be measured independently.
+We introduce ScopeBench, a methodological pilot that measures whether autonomous offensive-security agents respect engagement boundaries when completing an objective requires violating scope. We find scope adherence and capability can be measured independently.
 {{< /paper >}}
 
 {{< paper title="ProofJudge: Tool-Grounded LLM Evaluation of Formal Proof Quality in Mathlib" authors="Shane Caldwell" date="August 20th, 2026" url="https://arxiv.org/abs/2608.20432" accolade="Accepted for presentation at AITP 2026" >}}
