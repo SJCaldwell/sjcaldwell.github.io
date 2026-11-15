@@ -6,7 +6,7 @@ summary: "Shane Caldwell's research papers and publications"
 description: "Research on autonomous security agents, oversight, and evaluation."
 ---
 
-{{< paper title="ScopeBench: Do Agents Preserve Engagement Boundaries Under Goal Pressure?" authors="Shane Caldwell, Max Harley, Ads Dawson, Michael Kouremetis, Vincent Abruzzo, Will Pearce" date="September 23rd, 2026" url="https://arxiv.org/abs/2609.30325" featured="true" accolade="Accepted at AISec 2026" >}}
+{{< paper title="ScopeBench: Do Agents Preserve Engagement Boundaries Under Goal Pressure?" authors="Shane Caldwell, Max Harley, Ads Dawson, Michael Kouremetis, Vincent Abruzzo, Will Pearce" date="September 23rd, 2026" url="https://arxiv.org/abs/2609.30325" featured="true" accolade="Runner up for Distinguished Paper at AISec 2026" >}}
 We introduce ScopeBench, a methodological pilot that measures whether autonomous offensive-security agents respect engagement boundaries when completing an objective requires violating scope. We find scope adherence and capability can be measured independently.
 {{< /paper >}}
 
